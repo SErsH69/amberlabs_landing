@@ -16,7 +16,7 @@ window.app = new Vue({
             window: window.innerWidth
         },
         header: new Header({
-            isMobileMenuOpened: false,
+            breakpoint: 1023,
         }),
         modals: new Modals({
             modalsSelector: "data-modal",

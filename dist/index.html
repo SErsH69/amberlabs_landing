@@ -8,17 +8,255 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20260311171117"
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20260315233810"
             rel="stylesheet"
         />
         <title>Главная</title>
-        <link rel="stylesheet" href="css/style.css?_v=20260311171117" />
+        <link rel="stylesheet" href="css/style.css?_v=20260315233810" />
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-            <header class="header"></header>
-            <main class="content">Content</main>
-            <footer class="footer"></footer>
+            <header class="header">
+    <div class="header__inner center_block">
+        <a class="header__logo" href="/" aria-label="AmberLabs home">
+            <img src="./img/logo.svg" alt="">
+        </a>
+
+        <input class="header__toggle" type="checkbox" id="header-menu-toggle" />
+
+        <div class="header__menu" data-header-menu>
+            <nav class="header__nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#projects">&#1055;&#1088;&#1086;&#1077;&#1082;&#1090;&#1099;</a></li>
+                    <li><a href="#services">&#1059;&#1089;&#1083;&#1091;&#1075;&#1080;</a></li>
+                    <li><a href="#cooperation">&#1057;&#1086;&#1090;&#1088;&#1091;&#1076;&#1085;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086;</a></li>
+                    <li><a href="#partners">&#1055;&#1072;&#1088;&#1090;&#1085;&#1077;&#1088;&#1099;</a></li>
+                    <li><a href="#contacts">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></li>
+                </ul>
+            </nav>
+            <a class="header__contact header__contact_mobile" href="#contacts">&#1057;&#1074;&#1103;&#1079;&#1072;&#1090;&#1100;&#1089;&#1103; &#1089; &#1085;&#1072;&#1084;&#1080;</a>
+        </div>
+
+        <div class="header__actions">
+            <a class="header__contact" href="#contacts">&#1057;&#1074;&#1103;&#1079;&#1072;&#1090;&#1100;&#1089;&#1103; &#1089; &#1085;&#1072;&#1084;&#1080;</a>
+            <label
+                class="header__burger"
+                for="header-menu-toggle"
+                aria-label="Open menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="hero">
+    <div class="hero__inner center_block">
+        <div class="hero__content">
+            <div class="hero__eyebrow">
+                <span class="hero__eyebrow-line"></span>
+                <span class="hero__eyebrow-text">Amber Labs</span>
+                <span class="hero__eyebrow-line"></span>
+            </div>
+
+            <h1 class="hero__title">
+                Ваш надежный ИТ-партнёр
+                <br>
+                в трансформации бизнеса
+            </h1>
+
+            <div class="hero__text">
+                Наша экспертиза охватывает весь жизненный цикл
+                ИТ-инициатив: от стратегии до поддержки.
+            </div>
+        </div>
+    </div>
+
+    <img class="hero__arc" src="./img/hero_arc.svg" alt="" aria-hidden="true">
+</section>
+
+                <section class="expertise">
+    <picture><source srcset="./img/expertise_l.webp" type="image/webp"><img class="expertise__decor expertise__decor_left" src="./img/expertise_l.png" alt="" aria-hidden="true"></picture>
+    <picture><source srcset="./img/expertise_r.webp" type="image/webp"><img class="expertise__decor expertise__decor_right" src="./img/expertise_r.png" alt="" aria-hidden="true"></picture>
+
+    <div class="expertise__inner center_block">
+        <div class="expertise__head">
+            <h2 class="expertise__title">
+                Специализируемся на реализации
+                <br>
+                комплексных ИТ-проектов
+            </h2>
+            <div class="expertise__text">
+                Наша экспертиза охватывает весь жизненный цикл
+                ИТ-инициатив - от стратегии до поддержки
+            </div>
+        </div>
+
+        <div class="expertise__grid">
+            <div class="expertise__card expertise__card_top">
+                <div class="expertise__card-icon">
+                    <img src="./img/expertise_icon_gear.svg" alt="">
+                </div>
+                <div class="expertise__card-text">Внедрение Enterprise - программного обеспечения</div>
+                <div class="expertise__card-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="expertise__card expertise__card_top">
+                <div class="expertise__card-icon">
+                    <img src="./img/expertise_icon_bulb.svg" alt="">
+                </div>
+                <div class="expertise__card-text">ИТ-консалтинг и аудит бизнес-процессов</div>
+                <div class="expertise__card-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="expertise__card expertise__card_top">
+                <div class="expertise__card-icon">
+                    <img src="./img/expertise_icon_link.svg" alt="">
+                </div>
+                <div class="expertise__card-text">Системная интеграция и построение архитектур</div>
+                <div class="expertise__card-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="expertise__card expertise__card_bottom">
+                <div class="expertise__card-icon">
+                    <img src="./img/expertise_icon_gear.svg" alt="">
+                </div>
+                <div class="expertise__card-text">Разработка и реализация ИТ - стратегий</div>
+                <div class="expertise__card-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="expertise__card expertise__card_bottom">
+                <div class="expertise__card-icon">
+                    <img src="./img/expertise_icon_bulb.svg" alt="">
+                </div>
+                <div class="expertise__card-text">Заказная разработка и сопровождение программных решений</div>
+                <div class="expertise__card-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer" id="contacts">
+    <div class="footer__inner center_block">
+        <h2 class="footer__title footer__title_desktop">Контакты</h2>
+        <div class="footer__title footer__title_mobile">Свяжитесь с нами</div>
+
+        <div class="footer__columns">
+            <div class="footer__column footer__column_brand">
+                <div class="footer__brand-top">
+                    <div class="footer__brand-mobile-note">Чтобы обсудить детали</div>
+                    <img class="footer__brand-logo" src="./img/logo_footer.svg" alt="AmberLabs">
+                </div>
+
+                <div class="footer__brand-text">
+                    Получите экспертные советы и индивидуальные решения для
+                    вашего бизнеса от нашего босса!
+                </div>
+
+                <a class="footer__director" href="mailto:info@amberlabs.ru">
+                    Написать директору
+                </a>
+            </div>
+
+            <div class="footer__column footer__column_info">
+                <div class="footer__contact footer__contact_email">
+                    <div class="footer__label">E-mail</div>
+                    <a class="footer__value" href="mailto:info@amberlabs.ru">info@amberlabs.ru</a>
+                </div>
+
+                <div class="footer__links footer__links_services">
+                    <ul>
+                        <li><a href="#analytics">Аналитика</a></li>
+                        <li><a href="#sap-consulting">SAP-консалтинг</a></li>
+                        <li><a href="#it-consulting">ИТ-консалтинг</a></li>
+                        <li><a href="#app-development">Разработка приложений</a></li>
+                        <li><a href="#sap-hana">SAP HANA</a></li>
+                        <li><a href="#1c">1C</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__column footer__column_nav">
+                <div class="footer__contact footer__contact_phone">
+                    <div class="footer__label">Телефон для связи</div>
+                    <a class="footer__value" href="tel:+74959152121">+7 (495) 915-21-21</a>
+
+                    <div class="footer__socials">
+                        <a class="footer__social" href="#" aria-label="VK">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.79 17.3c-5.48 0-8.61-3.75-8.74-10h2.74c.09 4.58 2.11 6.52 3.7 6.92V7.3h2.57v3.95c1.57-.17 3.22-1.97 3.78-3.95h2.57c-.43 2.44-2.22 4.24-3.49 4.98 1.27.6 3.3 2.18 4.07 5.02h-2.83c-.61-1.9-2.13-3.37-4.1-3.57v3.57h-.27Z"/>
+                            </svg>
+                        </a>
+                        <a class="footer__social" href="#" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.38 6.39 4.96 11.56c-.92.37-.91.89-.17 1.12l3.45 1.08 7.98-5.03c.38-.23.72-.11.43.15l-6.46 5.83-.24 3.59c.35 0 .5-.16.7-.35l1.68-1.63 3.49 2.58c.64.35 1.1.17 1.26-.59l2.29-10.8c.24-.93-.36-1.35-.99-1.07Z"/>
+                            </svg>
+                        </a>
+                        <a class="footer__social" href="#" aria-label="Rutube">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h7.83c2.64 0 4.5 1.6 4.5 4.02 0 1.56-.71 2.76-1.98 3.41L20 19h-3.98l-5.12-5.84H8V19H4V5Zm4 3.05v2.26h3.49c.82 0 1.4-.43 1.4-1.13 0-.7-.58-1.13-1.4-1.13H8Z"/>
+                            </svg>
+                        </a>
+                        <a class="footer__social" href="#" aria-label="Dzen">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3c0 2.97-1.03 5.03-3.08 6.17C6.87 10.3 4.56 10.87 2 10.87v2.26c2.56 0 4.87.57 6.92 1.7C10.97 15.97 12 18.03 12 21h2c0-2.97 1.03-5.03 3.08-6.17 2.05-1.13 4.36-1.7 6.92-1.7v-2.26c-2.56 0-4.87-.57-6.92-1.7C15.03 8.03 14 5.97 14 3h-2Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links-wrap">
+                    <div class="footer__links footer__links_menu">
+                        <ul>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#prices">Цены</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                            <li><a href="#themes">Тематики</a></li>
+                            <li><a href="#blog">Блог</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__links footer__links_about">
+                        <ul>
+                            <li><a href="#about">Об агенстве</a></li>
+                            <li><a href="#vacancies">Вакансии</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#cooperation">Сотрудничество</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <picture><source srcset="./img/big_logo.webp" type="image/webp"><img class="footer__background-logo" src="./img/big_logo.png" alt="" aria-hidden="true"></picture>
+    </div>
+</footer>
+
             <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer"></div>
@@ -94,6 +332,6 @@
     </div>
 </div>
         </div>
-        <script src="js/app.min.js?_v=20260311171117"></script>
+        <script src="js/app.min.js?_v=20260315233810"></script>
     </body>
 </html>

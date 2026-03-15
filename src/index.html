@@ -17,7 +17,10 @@
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
             @@include('blocks/modules/header/header.html', {})
-            <main class="content">Content</main>
+            <main class="content">
+                @@include('blocks/components/section/section.html', {})
+                @@include('blocks/components/expertise/expertise.html', {})
+            </main>
             @@include('blocks/modules/footer/footer.html', {})
             @@include('blocks/modules/modals/main.modal.html', {})
         </div>
