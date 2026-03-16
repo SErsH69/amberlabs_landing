@@ -1,0 +1,194 @@
+.bpmsoft-automation {
+    position: relative;
+    padding: 104px 0 160px;
+}
+
+.bpmsoft-automation__inner {
+    position: relative;
+}
+
+.bpmsoft-automation__top {
+    display: grid;
+    grid-template-columns: minmax(0, 744px) minmax(0, 560px);
+    column-gap: 74px;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.bpmsoft-automation__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 40px;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.26;
+}
+
+.bpmsoft-automation__label {
+    margin-top: 102px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.bpmsoft-automation__intro {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.48;
+}
+
+.bpmsoft-automation__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 27px auto 0;
+}
+
+.bpmsoft-automation__panel {
+    padding: 12px 23px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bpmsoft-automation__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 10px 8px 11px 0;
+}
+
+.bpmsoft-automation__item + .bpmsoft-automation__item {
+    margin-top: 6px;
+}
+
+.bpmsoft-automation__item-mark {
+    flex: 0 0 7px;
+    
+    height: -webkit-fill-available;
+    width: 7px;
+    min-height: 60px;
+    margin-top: 2px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f3bc12 0%, #f19023 46%, #ee6d00 100%);
+}
+
+.bpmsoft-automation__item-body {
+    max-width: 586px;
+}
+
+.bpmsoft-automation__item-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.25;
+}
+
+.bpmsoft-automation__item-text {
+    margin-top: 13px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.42;
+}
+
+.bpmsoft-automation__plate {
+    position: absolute;
+    right: 0px;
+    bottom: -536px;
+    width: 617px;
+    max-width: none;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+.bpmsoft-automation__top,
+.bpmsoft-automation__content {
+    position: relative;
+    z-index: 1;
+}
+
+@media all and (max-width: 1023px) {
+    .bpmsoft-automation {
+        padding: 56px 0 76px;
+        background:
+            radial-gradient(130% 90% at 100% 100%, rgba(182, 104, 40, 0.18) 0%, rgba(0, 0, 0, 0) 34%),
+            #000;
+    }
+
+    .bpmsoft-automation__top {
+        grid-template-columns: 1fr;
+        row-gap: 18px;
+    }
+
+    .bpmsoft-automation__title {
+        max-width: none;
+        font-size: 26px;
+        line-height: 1.22;
+    }
+
+    .bpmsoft-automation__label {
+        margin-top: 24px;
+        font-size: 17px;
+    }
+
+    .bpmsoft-automation__intro {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .bpmsoft-automation__content {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    .bpmsoft-automation__panel {
+        padding: 16px 14px;
+        border-radius: 20px;
+    }
+
+    .bpmsoft-automation__item {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .bpmsoft-automation__item + .bpmsoft-automation__item {
+        margin-top: 16px;
+    }
+
+    .bpmsoft-automation__item-mark {
+        min-height: 52px;
+    }
+
+    .bpmsoft-automation__item-title {
+        font-size: 15px;
+    }
+
+    .bpmsoft-automation__item-text {
+        margin-top: 6px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .bpmsoft-automation__plate {
+        right: 0;
+        bottom: -88px;
+        width: 284px;
+        opacity: 0.72;
+    }
+}

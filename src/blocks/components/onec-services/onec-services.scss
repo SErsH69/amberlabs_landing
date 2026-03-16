@@ -1,0 +1,164 @@
+.onec-services {
+    position: relative;
+    overflow: hidden;
+    padding: 245px 0 196px;
+    background: #000;
+}
+
+.onec-services__inner {
+    position: relative;
+}
+
+.onec-services__head {
+    margin-bottom: 64px;
+}
+
+.onec-services__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    margin: 0;
+    color: #e39b18;
+    font-family: var(--second-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+.onec-services__title span {
+    display: none;
+}
+
+.onec-services__panel {
+    position: relative;
+    z-index: 2;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 43px 30px 30px;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.onec-services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 17px;
+}
+
+.onec-services__item {
+    display: flex;
+    gap: 18px;
+    min-height: 106px;
+    padding: 8px 10px 10px 0;
+}
+
+.onec-services__item-mark {
+    flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #f4be00 0%, #ee6d00 100%);
+    margin-left: -2px;
+}
+
+.onec-services__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.onec-services__item-title {
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.onec-services__item-text {
+    color: rgba(255, 255, 255, 0.58);
+    font-family: var(--second-family);
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.38;
+}
+
+.onec-services__puzzles {
+    position: absolute;
+    right: -107px;
+    top: -207px;
+    z-index: 1;
+    width: 633px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.onec-services__arc {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    z-index: 1;
+    width: min(100%, 1918px);
+    transform: translateX(-50%);
+    pointer-events: none;
+    user-select: none;
+}
+
+@media all and (max-width: 1023px) {
+    .onec-services {
+        padding: 28px 0 22px;
+    }
+
+    .onec-services__head {
+        margin-bottom: 20px;
+    }
+
+    .onec-services__title {
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    .onec-services__title span {
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+    }
+
+    .onec-services__panel {
+        max-width: none;
+        padding: 0 12px;
+        border-radius: 14px;
+    }
+
+    .onec-services__grid {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .onec-services__item {
+        min-height: 0;
+        padding: 14px 0;
+    }
+
+    .onec-services__item + .onec-services__item {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .onec-services__item-title {
+        font-size: 17px;
+        line-height: 1.24;
+    }
+
+    .onec-services__item-text {
+        font-size: 13px;
+        line-height: 1.32;
+    }
+
+    .onec-services__puzzles,
+    .onec-services__arc {
+        display: none;
+    }
+}
