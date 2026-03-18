@@ -1,0 +1,96 @@
+.avanpost-benefits {
+    position: relative;
+    padding: 100px 0;
+    background: #000;
+}
+
+.avanpost-benefits__inner {
+    position: relative;
+}
+
+.avanpost-benefits__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.24;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.avanpost-benefits__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 66px;
+}
+
+.avanpost-benefits__card {
+    position: relative;
+    min-height: 215px;
+    padding: 31px 22px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.1);
+    grid-column: span 4;
+}
+
+.avanpost-benefits__card-icon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+}
+
+.avanpost-benefits__card-text {
+    max-width: 362px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.42;
+    color: #fff;
+}
+
+@media all and (max-width: 1023px) {
+    .avanpost-benefits {
+        padding: 30px 0;
+    }
+
+    .avanpost-benefits__title {
+        font-size: 24px;
+        line-height: 1.22;
+    }
+
+    .avanpost-benefits__grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .avanpost-benefits__card {
+        min-height: 0;
+        padding: 18px 18px 16px;
+        border-radius: 16px;
+        grid-column: auto;
+    }
+
+    .avanpost-benefits__card-icon {
+        top: 14px;
+        right: 14px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .avanpost-benefits__card-text {
+        max-width: none;
+        padding-right: 24px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}

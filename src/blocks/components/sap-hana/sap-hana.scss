@@ -1,0 +1,204 @@
+.sap-hana {
+    --sap-hana-ticker-step: 160px;
+    padding-top: 17px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sap-hana__inner {
+    position: relative;
+}
+
+.sap-hana__head {
+    position: relative;
+    z-index: 2;
+}
+
+.sap-hana__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.18;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sap-hana__subtitle {
+    margin-top: 15px;
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.sap-hana__ticker {
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+    top: 69px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.sap-hana__ticker-track {
+    width: 100%;
+    height: 26px;
+    background: url("../img/logo_scroll.svg") repeat-x 0 50% / 160px 26px;
+    animation: sap-hana-ticker 22s linear infinite;
+    opacity: .2;
+}
+
+.sap-hana__ticker-group {
+    display: none;
+}
+
+.sap-hana__ticker-logo {
+    display: none;
+}
+
+.sap-hana__layout {
+    display: grid;
+    grid-template-columns: 1fr 1.38fr;
+    gap: 54px;
+    align-items: start;
+    margin-top: 52px;
+}
+
+.sap-hana__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.sap-hana__benefit {
+    min-height: 188px;
+    max-width: 435px;
+    padding: 28px 23px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sap-hana__benefit-number {
+    margin-bottom: 23px;
+    color: #f0a21b;
+    font-family: var(--second-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.sap-hana__benefit-text {
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.38;
+}
+
+.sap-hana__scheme-wrap {
+    padding-top: 6px;
+}
+
+.sap-hana__scheme {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sap-hana__caption {
+    margin-top: 52px;
+    color: rgba(255, 255, 255, 0.68);
+    font-family: var(--second-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: right;
+}
+
+@keyframes sap-hana-ticker {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: calc(-1 * var(--sap-hana-ticker-step));
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .sap-hana {
+        --sap-hana-ticker-step: 110px;
+        padding: 30px 0;
+    }
+
+    .sap-hana__title {
+        font-size: 26px;
+        line-height: 1.18;
+    }
+
+    .sap-hana__subtitle {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .sap-hana__ticker {
+        margin-top: 4px;
+    }
+
+    .sap-hana__ticker-logo {
+        display: none;
+    }
+
+    .sap-hana__ticker-track {
+        height: 16px;
+        background-size: 110px 16px;
+    }
+
+    .sap-hana__layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sap-hana__benefits {
+        gap: 10px;
+    }
+
+    .sap-hana__benefit {
+        min-height: 0;
+        padding: 14px 14px 12px;
+        max-width: 100%;
+        border-radius: 18px;
+    }
+
+    .sap-hana__benefit-number {
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .sap-hana__benefit-text {
+        max-width: none;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .sap-hana__scheme-wrap {
+        order: -1;
+        padding-top: 0;
+    }
+
+    .sap-hana__caption {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+}

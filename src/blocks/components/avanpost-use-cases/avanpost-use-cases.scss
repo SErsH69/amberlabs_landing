@@ -1,0 +1,115 @@
+.avanpost-use-cases {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.avanpost-use-cases__inner {
+    position: relative;
+}
+
+.avanpost-use-cases__top {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.avanpost-use-cases__heading {
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.avanpost-use-cases__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 25px;
+    row-gap: 0;
+    margin-top: 25px;
+}
+
+.avanpost-use-cases__item {
+    position: relative;
+    padding: 16px 0 18px 34px;
+}
+
+.avanpost-use-cases__item::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+}
+
+.avanpost-use-cases__item::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 0;
+    bottom: 4px;
+    height: 1px;
+    background: url("data:image/svg+xml,%3Csvg width='640' height='1' viewBox='0 0 640 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.37114e-08' y1='0.5' x2='640' y2='0.500056' stroke='url(%23paint0_linear_331_11105)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_331_11105' x1='-4.37114e-08' y1='1.5' x2='640' y2='1.50006' gradientUnits='userSpaceOnUse'%3E%3Cstop/%3E%3Cstop offset='0.514423' stop-color='white'/%3E%3Cstop offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.avanpost-use-cases__item-title {
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.avanpost-use-cases__item-text {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.62);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.42;
+}
+
+@media all and (max-width: 1023px) {
+    .avanpost-use-cases {
+        padding: 30px 0;
+    }
+
+    .avanpost-use-cases__heading {
+        font-size: 18px;
+    }
+
+    .avanpost-use-cases__grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 18px;
+    }
+
+    .avanpost-use-cases__item {
+        padding: 16px 0 16px 16px;
+    }
+
+    .avanpost-use-cases__item::before {
+        width: 7px;
+        height: 7px;
+    }
+
+    .avanpost-use-cases__item::after {
+        right: 0;
+    }
+
+    .avanpost-use-cases__item-title {
+        font-size: 15px;
+    }
+
+    .avanpost-use-cases__item-text {
+        max-width: none;
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
