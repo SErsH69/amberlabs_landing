@@ -1,7 +1,16 @@
 .header {
-    position: relative;
-    z-index: 10;
-    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.header + .content {
+    padding-top: 76px;
 }
 
 .header__inner {
@@ -194,6 +203,10 @@
 }
 
 @media all and (max-width: 1023px) {
+    .header + .content {
+        padding-top: 72px;
+    }
+
     .header {
         padding-top: 0;
     }
@@ -268,6 +281,10 @@
 }
 
 @media all and (max-width: 767px) {
+    .header + .content {
+        padding-top: 64px;
+    }
+
     .header__inner {
         min-height: 64px;
     }

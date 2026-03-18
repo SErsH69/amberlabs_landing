@@ -1,0 +1,70 @@
+.trust-logos {
+    position: relative;
+    overflow: hidden;
+    padding: 272px 0 140px;
+    background: url(../img/sun.svg) 0% 0% / 100% no-repeat;
+}
+
+.trust-logos__inner {
+    position: relative;
+}
+
+.trust-logos__head {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.trust-logos__title {
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+.trust-logos__subtitle {
+    margin-top: 4px;
+    font-family: var(--second-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.18;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trust-logos__panel {
+    position: relative;
+    z-index: 1;
+    max-width: 1248px;
+    margin: 55px auto 0;
+}
+
+.trust-logos__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 1023px) {
+    .trust-logos {
+        padding: 135px 0 74px;
+    }
+
+    .trust-logos__arc {
+        top: -40px;
+        width: 168%;
+        height: 148px;
+    }
+
+    .trust-logos__title,
+    .trust-logos__subtitle {
+        font-size: 24px;
+    }
+
+    .trust-logos__panel {
+        margin-top: 22px;
+    }
+}

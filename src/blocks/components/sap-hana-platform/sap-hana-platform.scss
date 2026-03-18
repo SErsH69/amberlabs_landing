@@ -1,0 +1,203 @@
+.sap-hana-platform {
+    position: relative;
+    padding: 150px 0 0;
+    @media all and (max-width: 1023px) {
+        overflow: hidden;
+    }
+}
+
+.sap-hana-platform__inner {
+    position: relative;
+}
+
+.sap-hana-platform__head {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 214px;
+}
+
+.sap-hana-platform__content {
+    max-width: 1005px;
+}
+
+.sap-hana-platform__title {
+    margin: 0;
+    color: #e6991b;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.sap-hana-platform__text {
+    max-width: 1005px;
+    margin-top: 17px;
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.34;
+}
+
+.sap-hana-platform__ellipse {
+    position: absolute;
+    right: -118px;
+    top: 77px;
+    width: 470px;
+    max-width: none;
+    margin: 18px 98px 0 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.sap-hana-platform__label {
+    position: relative;
+    z-index: 1;
+    margin-top: 56px;
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.sap-hana-platform__panel {
+    position: relative;
+    z-index: 2;
+    margin-top: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 84px 30px 75px;
+    backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sap-hana-platform__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 18px;
+    row-gap: 17px;
+}
+
+.sap-hana-platform__item {
+    display: flex;
+    gap: 18px;
+    min-height: 106px;
+    padding: 8px 10px 10px 0;
+}
+
+.sap-hana-platform__item-mark {
+    flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+    margin-top: 7px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #f4be00 0%, #ee6d00 100%);
+}
+
+.sap-hana-platform__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sap-hana-platform__item-title {
+    color: #fff;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.sap-hana-platform__item-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.38;
+}
+
+.sap-hana-platform__sun {
+    position: absolute;
+    top: -119px;
+    left: -174px;
+    width: 470px;
+    max-width: none;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+
+@media all and (max-width: 1023px) {
+    .sap-hana-platform {
+        padding: 62px 0 0;
+        background: #000;
+    }
+
+    .sap-hana-platform__head {
+        display: block;
+        min-height: 0;
+    }
+
+    .sap-hana-platform__title {
+        font-size: 24px;
+    }
+
+    .sap-hana-platform__text {
+        margin-top: 14px;
+        font-size: 18px;
+        line-height: 1.32;
+    }
+
+    .sap-hana-platform__ellipse {
+        display: block;
+        width: 180px;
+        margin: 24px auto 0;
+    }
+
+    .sap-hana-platform__label {
+        margin-top: 28px;
+        font-size: 20px;
+    }
+
+    .sap-hana-platform__panel {
+        margin-top: 22px;
+        padding: 0 12px;
+        border-radius: 14px;
+    }
+
+    .sap-hana-platform__grid {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .sap-hana-platform__item {
+        min-height: 0;
+        padding: 14px 0;
+    }
+
+    .sap-hana-platform__item + .sap-hana-platform__item {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sap-hana-platform__item-title {
+        font-size: 17px;
+        line-height: 1.24;
+    }
+
+    .sap-hana-platform__item-text {
+        font-size: 13px;
+        line-height: 1.32;
+    }
+
+    .sap-hana-platform__sun {
+        top: 0;
+        left: -42px;
+        width: 138px;
+        opacity: 0.9;
+    }
+}

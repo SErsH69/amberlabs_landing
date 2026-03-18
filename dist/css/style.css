@@ -2398,6 +2398,352 @@ textarea {
   }
 }
 
+.sap-hana-platform {
+  position: relative;
+  padding: 150px 0 0;
+}
+
+.sap-hana-platform__inner {
+  position: relative;
+}
+
+.sap-hana-platform__head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 214px;
+}
+
+.sap-hana-platform__content {
+  max-width: 1005px;
+}
+
+.sap-hana-platform__title {
+  margin: 0;
+  color: #e6991b;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.sap-hana-platform__text {
+  max-width: 1005px;
+  margin-top: 17px;
+  color: #fff;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.34;
+}
+
+.sap-hana-platform__ellipse {
+  position: absolute;
+  right: -118px;
+  top: 77px;
+  width: 470px;
+  max-width: none;
+  margin: 18px 98px 0 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.sap-hana-platform__label {
+  position: relative;
+  z-index: 1;
+  margin-top: 56px;
+  color: #fff;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.sap-hana-platform__panel {
+  position: relative;
+  z-index: 2;
+  margin-top: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  padding: 84px 30px 75px;
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sap-hana-platform__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  row-gap: 17px;
+}
+
+.sap-hana-platform__item {
+  display: flex;
+  gap: 18px;
+  min-height: 106px;
+  padding: 8px 10px 10px 0;
+}
+
+.sap-hana-platform__item-mark {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  margin-top: 7px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f4be00 0%, #ee6d00 100%);
+}
+
+.sap-hana-platform__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sap-hana-platform__item-title {
+  color: #fff;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.sap-hana-platform__item-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.38;
+}
+
+.sap-hana-platform__sun {
+  position: absolute;
+  top: -119px;
+  left: -174px;
+  width: 470px;
+  max-width: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 0;
+}
+
+.contact-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 138px 0 150px;
+  background: #000;
+}
+
+.contact-cta__inner {
+  position: relative;
+}
+
+.contact-cta__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 782px);
+  justify-content: space-between;
+  gap: 46px;
+  align-items: start;
+  max-width: 1270px;
+  margin: 0 auto;
+}
+
+.contact-cta__title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.18;
+  background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-cta__subtitle {
+  margin-top: 10px;
+  color: #fff;
+  font-family: var(--second-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.contact-cta__form {
+  margin-top: 79px;
+}
+
+.contact-cta__field + .contact-cta__field {
+  margin-top: 16px;
+}
+
+.contact-cta__label {
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--second-family);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-cta__input {
+  display: block;
+  width: 100%;
+  height: 63px;
+  padding: 0 18px;
+  border: 1px solid rgba(240, 162, 27, 0.85);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-family: var(--second-family);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-cta__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.contact-cta__input::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.contact-cta__input:focus {
+  outline: none;
+  border-color: #f0a21b;
+  box-shadow: 0 0 0 1px rgba(240, 162, 27, 0.2);
+}
+
+.contact-cta__submit-wrap {
+  margin-top: 24px;
+}
+
+.contact-cta__submit {
+  min-width: 184px;
+  width: 100%;
+  height: 52px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 999px;
+  font-family: var(--second-family);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #f4be00 0%, #f19023 43%, #ee6d00 100%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.contact-cta__submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(241, 144, 35, 0.28);
+  filter: brightness(1.06);
+}
+
+.contact-cta__right {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.contact-cta__contacts {
+  position: relative;
+  padding-left: 18px;
+}
+
+.contact-cta__contacts::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+}
+
+.contact-cta__contacts-line {
+  display: block;
+  color: #fff;
+  font-family: var(--second-family);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.contact-cta__map {
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-cta__map-frame {
+  display: block;
+  width: 100%;
+  height: 378px;
+  border: 0;
+  filter: grayscale(1) brightness(0.82) contrast(1.05);
+}
+
+.trust-logos {
+  position: relative;
+  overflow: hidden;
+  padding: 272px 0 140px;
+  background: url(../img/sun.svg) 0% 0%/100% no-repeat;
+}
+
+.trust-logos__inner {
+  position: relative;
+}
+
+.trust-logos__head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.trust-logos__title {
+  color: #fff;
+  font-family: var(--second-family);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.trust-logos__subtitle {
+  margin-top: 4px;
+  font-family: var(--second-family);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.18;
+  background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trust-logos__panel {
+  position: relative;
+  z-index: 1;
+  max-width: 1248px;
+  margin: 55px auto 0;
+}
+
+.trust-logos__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .consulting-strategy {
   position: relative;
   padding: 100px 0;
@@ -2721,9 +3067,19 @@ textarea {
 }
 
 .header {
-  position: relative;
-  z-index: 10;
-  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.94);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.header + .content {
+  padding-top: 76px;
 }
 
 .header__inner {
@@ -4576,6 +4932,147 @@ textarea {
     font-size: 12px;
   }
 
+  .sap-hana-platform {
+    overflow: hidden;
+  }
+
+  .sap-hana-platform {
+    padding: 62px 0 0;
+    background: #000;
+  }
+
+  .sap-hana-platform__head {
+    display: block;
+    min-height: 0;
+  }
+
+  .sap-hana-platform__title {
+    font-size: 24px;
+  }
+
+  .sap-hana-platform__text {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.32;
+  }
+
+  .sap-hana-platform__ellipse {
+    display: block;
+    width: 180px;
+    margin: 24px auto 0;
+  }
+
+  .sap-hana-platform__label {
+    margin-top: 28px;
+    font-size: 20px;
+  }
+
+  .sap-hana-platform__panel {
+    margin-top: 22px;
+    padding: 0 12px;
+    border-radius: 14px;
+  }
+
+  .sap-hana-platform__grid {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .sap-hana-platform__item {
+    min-height: 0;
+    padding: 14px 0;
+  }
+
+  .sap-hana-platform__item + .sap-hana-platform__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .sap-hana-platform__item-title {
+    font-size: 17px;
+    line-height: 1.24;
+  }
+
+  .sap-hana-platform__item-text {
+    font-size: 13px;
+    line-height: 1.32;
+  }
+
+  .sap-hana-platform__sun {
+    top: 0;
+    left: -42px;
+    width: 138px;
+    opacity: 0.9;
+  }
+
+  .contact-cta {
+    padding: 64px 0 84px;
+  }
+
+  .contact-cta__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .contact-cta__title {
+    font-size: 28px;
+  }
+
+  .contact-cta__subtitle {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  .contact-cta__form {
+    margin-top: 28px;
+  }
+
+  .contact-cta__label {
+    font-size: 14px;
+  }
+
+  .contact-cta__input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .contact-cta__submit {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .contact-cta__contacts-line {
+    font-size: 16px;
+  }
+
+  .contact-cta__map {
+    border-radius: 20px;
+  }
+
+  .contact-cta__map-frame {
+    height: 280px;
+  }
+
+  .trust-logos {
+    padding: 135px 0 74px;
+  }
+
+  .trust-logos__arc {
+    top: -40px;
+    width: 168%;
+    height: 148px;
+  }
+
+  .trust-logos__title,
+  .trust-logos__subtitle {
+    font-size: 24px;
+  }
+
+  .trust-logos__panel {
+    margin-top: 22px;
+  }
+
   .consulting-strategy {
     padding: 30px 0;
   }
@@ -4799,6 +5296,10 @@ textarea {
   .app-development__item-title {
     font-size: 14px;
     line-height: 1.35;
+  }
+
+  .header + .content {
+    padding-top: 72px;
   }
 
   .header {
@@ -5120,6 +5621,10 @@ textarea {
 }
 
 @media all and (max-width: 767px) {
+  .header + .content {
+    padding-top: 64px;
+  }
+
   .header__inner {
     min-height: 64px;
   }

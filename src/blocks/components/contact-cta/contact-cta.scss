@@ -1,0 +1,206 @@
+.contact-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 138px 0 150px;
+    background: #000;
+}
+
+.contact-cta__inner {
+    position: relative;
+}
+
+.contact-cta__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 420px) minmax(0, 782px);
+    justify-content: space-between;
+    gap: 46px;
+    align-items: start;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.contact-cta__title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.18;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-cta__subtitle {
+    margin-top: 10px;
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.contact-cta__form {
+    margin-top: 79px;
+}
+
+.contact-cta__field + .contact-cta__field {
+    margin-top: 16px;
+}
+
+.contact-cta__label {
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: var(--second-family);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.contact-cta__input {
+    display: block;
+    width: 100%;
+    height: 63px;
+    padding: 0 18px;
+    border: 1px solid rgba(240, 162, 27, 0.85);
+    border-radius: 999px;
+    background: transparent;
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-cta__input::placeholder {
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.contact-cta__input:focus {
+    outline: none;
+    border-color: #f0a21b;
+    box-shadow: 0 0 0 1px rgba(240, 162, 27, 0.2);
+}
+
+.contact-cta__submit-wrap {
+    margin-top: 24px;
+}
+
+.contact-cta__submit {
+    min-width: 184px;
+    width: 100%;
+    height: 52px;
+    padding: 0 28px;
+    border: 0;
+    border-radius: 999px;
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg, #f4be00 0%, #f19023 43%, #ee6d00 100%);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.contact-cta__submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(241, 144, 35, 0.28);
+    filter: brightness(1.06);
+}
+
+.contact-cta__right {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
+
+.contact-cta__contacts {
+    position: relative;
+    padding-left: 18px;
+}
+
+.contact-cta__contacts::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
+}
+
+.contact-cta__contacts-line {
+    display: block;
+    color: #fff;
+    font-family: var(--second-family);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.contact-cta__map {
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-cta__map-frame {
+    display: block;
+    width: 100%;
+    height: 378px;
+    border: 0;
+    filter: grayscale(1) brightness(0.82) contrast(1.05);
+}
+
+@media all and (max-width: 1023px) {
+    .contact-cta {
+        padding: 64px 0 84px;
+    }
+
+    .contact-cta__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .contact-cta__title {
+        font-size: 28px;
+    }
+
+    .contact-cta__subtitle {
+        margin-top: 8px;
+        font-size: 18px;
+    }
+
+    .contact-cta__form {
+        margin-top: 28px;
+    }
+
+    .contact-cta__label {
+        font-size: 14px;
+    }
+
+    .contact-cta__input {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .contact-cta__submit {
+        width: 100%;
+        min-width: 0;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .contact-cta__contacts-line {
+        font-size: 16px;
+    }
+
+    .contact-cta__map {
+        border-radius: 20px;
+    }
+
+    .contact-cta__map-frame {
+        height: 280px;
+    }
+}

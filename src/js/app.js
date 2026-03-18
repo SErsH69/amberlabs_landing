@@ -5,6 +5,7 @@ import Vue from 'vue/dist/vue.js';
 
 import Header from '../blocks/modules/header/header.js';
 import Modals from '../blocks/modules/modals/modals.js';
+import WowReveal from './modules/wowReveal.js';
 
 window.app = new Vue({
     el: '#app',
@@ -22,17 +23,19 @@ window.app = new Vue({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
             openedClass: "isOpened"
-        })
+        }),
+        wowReveal: new WowReveal()
     }),
     beforeCreate() {        
         window.addEventListener('resize', () => {
             this.sizes.window = window.innerWidth;
         });
     },
-    beforeMount() {
+    mounted() {
         this.isMounted = true;
         this.header.init();
         this.modals.init();
+        this.wowReveal.init();
     },
     computed: {
         isMobile: function () {

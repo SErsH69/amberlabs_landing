@@ -8,17 +8,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20260318165056"
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap&_v=20260319015738"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20260319015738"
+        />
         <title>Главная</title>
-        <link rel="stylesheet" href="css/style.css?_v=20260318165056" />
+        <link rel="stylesheet" href="css/style.css?_v=20260319015738" />
     </head>
     <body>
         <div class="wrapper" id="app" :class="{isMobile, isTablet}">
             <header class="header">
     <div class="header__inner center_block">
-        <a class="header__logo" href="/" aria-label="AmberLabs home">
+        <a class="header__logo" href="#home" aria-label="AmberLabs home">
             <img src="./img/logo.svg" alt="">
         </a>
 
@@ -53,7 +57,7 @@
 </header>
 
             <main class="content">
-                <section class="hero">
+                <section class="hero" id="home">
     <div class="hero__inner center_block">
         <div class="hero__content">
             <div class="hero__eyebrow">
@@ -78,7 +82,7 @@
     <img class="hero__arc" src="./img/hero_arc.svg" alt="" aria-hidden="true">
 </section>
 
-                <section class="expertise">
+                <section class="expertise" id="projects">
     <picture><source srcset="./img/expertise_l.webp" type="image/webp"><img class="expertise__decor expertise__decor_left" src="./img/expertise_l.png" alt="" aria-hidden="true"></picture>
     <picture><source srcset="./img/expertise_r.webp" type="image/webp"><img class="expertise__decor expertise__decor_right" src="./img/expertise_r.png" alt="" aria-hidden="true"></picture>
 
@@ -159,7 +163,7 @@
     </div>
 </section>
 
-                <section class="consulting-strategy">
+                <section class="consulting-strategy" id="services">
     <div class="consulting-strategy__inner center_block">
         <div class="consulting-strategy__head">
             <h2 class="consulting-strategy__title">
@@ -285,7 +289,7 @@
     </div>
 </section>
 
-                <section class="analytics-data">
+                <section class="analytics-data" id="analytics">
     <div class="analytics-data__inner center_block">
         <h2 class="analytics-data__title">Аналитика и управление данными</h2>
 
@@ -404,7 +408,7 @@
     </div>
 </section>
 
-                <section class="app-development">
+                <section class="app-development" id="app-development">
     <div class="app-development__inner center_block">
         <h2 class="app-development__title">
             Разработка приложений
@@ -510,7 +514,7 @@
     </div>
 </section>
 
-                <section class="sap-consulting">
+                <section class="sap-consulting" id="sap-consulting">
     <div class="sap-consulting__inner center_block">
         <div class="sap-consulting__head">
             <h2 class="sap-consulting__title">
@@ -621,7 +625,7 @@
     </div>
 </section>
 
-                <section class="onec-services">
+                <section class="onec-services" id="onec-services">
     <div class="onec-services__inner center_block">
         <div class="onec-services__head">
             <h2 class="onec-services__title">
@@ -730,7 +734,7 @@
     </div>
     <img class="onec-services__arc" src="./img/hero_arc.svg" alt="" aria-hidden="true">
 </section>
- <section class="ldm-control">
+ <section class="ldm-control" id="ldm-control">
     <div class="ldm-control__inner center_block">
         <div class="ldm-control__top">
             <h2 class="ldm-control__title">
@@ -787,7 +791,7 @@
     <picture><source srcset="./img/romb.webp" type="image/webp"><img class="ldm-control__romb" src="./img/romb.png" alt="" aria-hidden="true"></picture>
 </section>
 
-                <section class="data-management">
+                <section class="data-management" id="data-management">
     <div class="data-management__inner center_block">
         <div class="data-management__head">
             <h2 class="data-management__title">Lansoft Data Management наводит порядок</h2>
@@ -859,7 +863,7 @@
     </div>
 </section>
 
-                <section class="bpmsoft-automation">
+                <section class="bpmsoft-automation" id="bpmsoft-automation">
     <div class="bpmsoft-automation__inner center_block">
         <div class="bpmsoft-automation__top">
             <div class="bpmsoft-automation__top-left">
@@ -943,7 +947,7 @@
     <picture><source srcset="./img/plate.webp" type="image/webp"><img class="bpmsoft-automation__plate" src="./img/plate.png" alt="" aria-hidden="true"></picture>
 </section>
 
-                <section class="business-benefits">
+                <section class="business-benefits" id="business-benefits">
     <div class="business-benefits__inner center_block">
         <h2 class="business-benefits__title">Преимущества для вашего бизнеса:</h2>
 
@@ -991,7 +995,7 @@
     </div>
 </section>
 
-                <section class="insight-scenarios">
+                <section class="insight-scenarios" id="insight-scenarios">
     <div class="insight-scenarios__inner center_block">
         <div class="insight-scenarios__top">
             <div class="insight-scenarios__heading">Сценарии применения:</div>
@@ -1038,7 +1042,7 @@
     <picture><source srcset="./img/cristall.webp" type="image/webp"><img class="insight-scenarios__cristall" src="./img/cristall.png" alt="" aria-hidden="true"></picture>
 </section>
 
-                <section class="insight-value">
+                <section class="insight-value" id="insight-value">
     <div class="insight-value__inner center_block">
         <div class="insight-value__hero">
             <div class="insight-value__hero-title">Ключевая ценность</div>
@@ -1142,7 +1146,7 @@
         </div>
     </div>
 </section>
- <section class="arenadata">
+ <section class="arenadata" id="arenadata">
     <div class="arenadata__inner center_block">
         <div class="arenadata__heading">
             <h2 class="arenadata__title">Arenadata – экосистема для работы с большими данными</h2>
@@ -1221,7 +1225,7 @@
     </div>
 </section>
 
-                <section class="arenadata-benefits">
+                <section class="arenadata-benefits" id="arenadata-benefits">
     <div class="arenadata-benefits__inner center_block">
         <h2 class="arenadata-benefits__title">Преимущества для вашего бизнеса:</h2>
 
@@ -1279,7 +1283,7 @@
     </div>
 </section>
 
-                <section class="avanpost-scenarios">
+                <section class="avanpost-scenarios" id="avanpost-scenarios">
     <div class="avanpost-scenarios__inner center_block">
         <div class="avanpost-scenarios__top">
             <div class="avanpost-scenarios__heading">Сценарии применения:</div>
@@ -1349,7 +1353,7 @@
     </div>
 </section>
 
-                <section class="avanpost-features">
+                <section class="avanpost-features" id="avanpost-features">
     <div class="avanpost-features__inner center_block">
         <div class="arenadata__label">Ключевые возможности</div>
 
@@ -1439,7 +1443,7 @@
     </div>
 </section>
 
-                <section class="avanpost-benefits">
+                <section class="avanpost-benefits" id="avanpost-benefits">
     <div class="avanpost-benefits__inner center_block">
         <h2 class="avanpost-benefits__title">Преимущества для вашего бизнеса:</h2>
 
@@ -1489,7 +1493,7 @@
     </div>
 </section>
 
-                <section class="avanpost-use-cases">
+                <section class="avanpost-use-cases" id="avanpost-use-cases">
     <div class="avanpost-use-cases__inner center_block">
         <div class="avanpost-use-cases__top">
             <div class="avanpost-use-cases__heading">Сценарии применения:</div>
@@ -1546,7 +1550,7 @@
     </div>
 </section>
 
-                <section class="mcp-program">
+                <section class="mcp-program" id="mcp-program">
     <div class="mcp-program__inner center_block">
         <h2 class="mcp-program__title">Merchandising Control Program</h2>
         <div class="mcp-program__subtitle">
@@ -1608,7 +1612,7 @@
     </div>
 </section>
 
-                <section class="sap-factory">
+                <section class="sap-factory" id="sap-factory">
     <div class="sap-factory__inner center_block">
         <div class="sap-factory__head">
             <h2 class="sap-factory__title">SAP S/4HANA Фабрика Конверсий</h2>
@@ -1703,7 +1707,7 @@
     </div>
 </section>
 
-                <section class="sap-hana">
+                <section class="sap-hana" id="sap-hana">
     <div class="sap-hana__ticker" aria-hidden="true">
         <div class="sap-hana__ticker-track"></div>
     </div>
@@ -1730,9 +1734,7 @@
                 <div class="sap-hana__benefit">
                     <div class="sap-hana__benefit-number">03</div>
                     <div class="sap-hana__benefit-text">
-                        Использовать аналитические приложения, которые раньше
-                        были недоступны из-за технических или экономических
-                        ограничений
+                        Использовать аналитические приложения, которые раньше были недоступны из-за технических или экономических ограничений
                     </div>
                 </div>
             </div>
@@ -1744,6 +1746,145 @@
                     alt="SAP HANA scheme"
                 />
                 <div class="sap-hana__caption">Project Description</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="sap-hana-platform" id="sap-hana-platform">
+    <div class="sap-hana-platform__inner center_block">
+        <div class="sap-hana-platform__head">
+            <div class="sap-hana-platform__content">
+                <h2 class="sap-hana-platform__title">SAP HANA</h2>
+                <div class="sap-hana-platform__text">
+                    Готовый программно-аппаратный комплекс с сертифицированным оборудованием от партнеров SAP
+                </div>
+            </div>
+
+            <picture><source srcset="./img/ellipse.webp" type="image/webp"><img class="sap-hana-platform__ellipse" src="./img/ellipse.png" alt="" aria-hidden="true"></picture>
+        </div>
+
+        <div class="sap-hana-platform__label">Ключевые компоненты SAP HANA</div>
+
+        <div class="sap-hana-platform__panel">
+            <div class="sap-hana-platform__grid">
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">База данных в ОП</div>
+                        <div class="sap-hana-platform__item-text">База данных в оперативной памяти – максимальная скорость обработки</div>
+                    </div>
+                </div>
+
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">Интеграция данных</div>
+                        <div class="sap-hana-platform__item-text">Подключение к любым источникам и преобразование данных (SAP BusinessObjects Data Services)</div>
+                    </div>
+                </div>
+
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">Поддержка сторонних решений</div>
+                        <div class="sap-hana-platform__item-text">Доступ через SQL и MDX-интерфейсы</div>
+                    </div>
+                </div>
+
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">Репликация данных</div>
+                        <div class="sap-hana-platform__item-text">Загрузка информации из SAP Business Suite и других источников в реальном времени</div>
+                    </div>
+                </div>
+
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">Глубокая аналитика</div>
+                        <div class="sap-hana-platform__item-text">Совместимость с SAP BusinessObjects для детального анализа</div>
+                    </div>
+                </div>
+
+                <div class="sap-hana-platform__item">
+                    <div class="sap-hana-platform__item-mark"></div>
+                    <div class="sap-hana-platform__item-content">
+                        <div class="sap-hana-platform__item-title">Удобное администрирование</div>
+                        <div class="sap-hana-platform__item-text">Единая среда для моделирования и управления базой</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <picture><source srcset="./img/sun.webp" type="image/webp"><img class="sap-hana-platform__sun" src="./img/sun.png" alt="" aria-hidden="true"></picture>
+    </div>
+</section>
+
+                <section class="trust-logos" id="partners">
+    <div class="trust-logos__inner center_block">
+        <div class="trust-logos__head">
+            <div class="trust-logos__title">Нам доверяют</div>
+            <div class="trust-logos__subtitle">лидеры своих отраслей</div>
+        </div>
+
+        <div class="trust-logos__panel">
+            <picture><source srcset="./img/logos.webp" type="image/webp"><img class="trust-logos__image" src="./img/logos.png" alt="Логотипы компаний-клиентов"></picture>
+        </div>
+    </div>
+</section>
+
+                <section class="contact-cta" id="cooperation">
+    <div class="contact-cta__inner center_block">
+        <div class="contact-cta__grid">
+            <div class="contact-cta__left">
+                <div class="contact-cta__title">Свяжитесь с нами</div>
+                <div class="contact-cta__subtitle">Чтобы обсудить детали</div>
+
+                <div class="contact-cta__form cf7-form">
+                    <div class="contact-cta__field">
+                        <div class="contact-cta__label">Ваше имя</div>
+                        <span class="wpcf7-form-control-wrap" data-name="your-name">
+                            <input class="contact-cta__input" type="text" name="your-name" value="" placeholder="Ваше имя">
+                        </span>
+                    </div>
+
+                    <div class="contact-cta__field">
+                        <div class="contact-cta__label">Номер телефона</div>
+                        <span class="wpcf7-form-control-wrap" data-name="your-phone">
+                            <input class="contact-cta__input" type="tel" name="your-phone" value="" placeholder="+7 (999) 999-99-99" inputmode="tel">
+                        </span>
+                    </div>
+
+                    <div class="contact-cta__field">
+                        <div class="contact-cta__label">Ваша почта</div>
+                        <span class="wpcf7-form-control-wrap" data-name="your-email">
+                            <input class="contact-cta__input" type="email" name="your-email" value="" placeholder="Введите почту">
+                        </span>
+                    </div>
+
+                    <div class="contact-cta__submit-wrap">
+                        <button class="contact-cta__submit" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta__right">
+                <div class="contact-cta__contacts">
+                    <div class="contact-cta__contacts-line">amberlabs.ru</div>
+                    <a class="contact-cta__contacts-line" href="mailto:info@amberlabs.ru">info@amberlabs.ru</a>
+                </div>
+
+                <div class="contact-cta__map">
+                    <iframe
+                        class="contact-cta__map-frame"
+                        src="https://yandex.ru/map-widget/v1/?ll=37.618423%2C55.751244&mode=search&pt=37.618423%2C55.751244%2Cpm2orgm&z=11"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Карта с отметкой"
+                    ></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -1763,8 +1904,7 @@
                 </div>
 
                 <div class="footer__brand-text">
-                    Получите экспертные советы и индивидуальные решения для
-                    вашего бизнеса от нашего босса!
+                    Получите экспертные советы и индивидуальные решения для вашего бизнеса от нашего босса!
                 </div>
 
                 <a class="footer__director" href="mailto:info@amberlabs.ru">
@@ -1782,10 +1922,10 @@
                     <ul>
                         <li><a href="#analytics">Аналитика</a></li>
                         <li><a href="#sap-consulting">SAP-консалтинг</a></li>
-                        <li><a href="#it-consulting">ИТ-консалтинг</a></li>
+                        <li><a href="#services">ИТ-консалтинг</a></li>
                         <li><a href="#app-development">Разработка приложений</a></li>
-                        <li><a href="#sap-hana">SAP HANA</a></li>
-                        <li><a href="#1c">1C</a></li>
+                        <li><a href="#sap-hana-platform">SAP HANA</a></li>
+                        <li><a href="#onec-services">1C</a></li>
                     </ul>
                 </div>
             </div>
@@ -1823,18 +1963,18 @@
                     <div class="footer__links footer__links_menu">
                         <ul>
                             <li><a href="#services">Услуги</a></li>
-                            <li><a href="#prices">Цены</a></li>
-                            <li><a href="#portfolio">Портфолио</a></li>
-                            <li><a href="#themes">Тематики</a></li>
-                            <li><a href="#blog">Блог</a></li>
+                            <li><a href="#cooperation">Цены</a></li>
+                            <li><a href="#projects">Портфолио</a></li>
+                            <li><a href="#analytics">Тематики</a></li>
+                            <li><a href="#insight-value">Блог</a></li>
                         </ul>
                     </div>
 
                     <div class="footer__links footer__links_about">
                         <ul>
-                            <li><a href="#about">Об агенстве</a></li>
-                            <li><a href="#vacancies">Вакансии</a></li>
-                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#home">Об агентстве</a></li>
+                            <li><a href="#cooperation">Вакансии</a></li>
+                            <li><a href="#partners">Отзывы</a></li>
                             <li><a href="#cooperation">Сотрудничество</a></li>
                             <li><a href="#contacts">Контакты</a></li>
                         </ul>
@@ -1922,6 +2062,7 @@
     </div>
 </div>
         </div>
-        <script src="js/app.min.js?_v=20260318165056"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?_v=20260319015738"></script>
+        <script src="js/app.min.js?_v=20260319015738"></script>
     </body>
 </html>
