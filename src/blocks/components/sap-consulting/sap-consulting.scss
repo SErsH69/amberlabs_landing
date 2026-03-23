@@ -1,7 +1,7 @@
 .sap-consulting {
     position: relative;
     overflow: hidden;
-    padding: 108px 0 118px;
+    padding: 100px 0;
     background: #000;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .sap-consulting__head {
-    margin-bottom: 89px;
+    margin-bottom: 60px;
 }
 
 .sap-consulting__title {
@@ -22,7 +22,7 @@
     color: #e39b18;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.18;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .sap-consulting__panel {
-    padding: 28px 39px 18px;
+    padding: 20px 28px 14px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 40px;
     backdrop-filter: blur(24px);
@@ -50,9 +50,9 @@
 
 .sap-consulting__item {
     display: flex;
-    gap: 26px;
-    min-height: 72px;
-    padding: 14px 0;
+    gap: 20px;
+    min-height: 58px;
+    padding: 10px 0;
 }
 
 .sap-consulting__item + .sap-consulting__item {
@@ -69,13 +69,13 @@
 .sap-consulting__item-content {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 8px;
 }
 
 .sap-consulting__item-title {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.25;
 }
@@ -83,7 +83,7 @@
 .sap-consulting__item-text {
     color: rgba(255, 255, 255, 0.58);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.45;
 }
@@ -93,7 +93,7 @@
     left: -212px;
     bottom: -119px;
     z-index: 1;
-    width: 548px;
+    width: 430px;
     pointer-events: none;
     user-select: none;
 }

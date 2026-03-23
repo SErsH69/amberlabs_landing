@@ -1,6 +1,6 @@
 .bpmsoft-automation {
     position: relative;
-    padding: 104px 0 160px;
+    padding: 100px 0 120px;
 }
 
 .bpmsoft-automation__inner {
@@ -10,7 +10,7 @@
 .bpmsoft-automation__top {
     display: grid;
     grid-template-columns: minmax(0, 744px) minmax(0, 560px);
-    column-gap: 74px;
+    column-gap: 50px;
     align-items: start;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 34px;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -28,10 +28,10 @@
 }
 
 .bpmsoft-automation__label {
-    margin-top: 102px;
+    margin-top: 72px;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
     line-height: 1.2;
 }
@@ -39,7 +39,7 @@
 .bpmsoft-automation__intro {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.48;
 }
@@ -47,25 +47,25 @@
 .bpmsoft-automation__content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    margin: 27px auto 0;
+    gap: 12px;
+    margin: 22px auto 0;
 }
 
 .bpmsoft-automation__panel {
-    padding: 12px 23px 10px;
+    padding: 12px 18px 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 28px;
 }
 
 .bpmsoft-automation__item {
     display: flex;
     align-items: flex-start;
-    gap: 26px;
+    gap: 18px;
     padding: 10px 8px 11px 0;
 }
 
@@ -78,7 +78,7 @@
     
     height: -webkit-fill-available;
     width: 7px;
-    min-height: 60px;
+    min-height: 48px;
     margin-top: 2px;
     border-radius: 999px;
     background: linear-gradient(180deg, #f3bc12 0%, #f19023 46%, #ee6d00 100%);
@@ -91,16 +91,16 @@
 .bpmsoft-automation__item-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
     line-height: 1.25;
 }
 
 .bpmsoft-automation__item-text {
-    margin-top: 13px;
+    margin-top: 8px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
@@ -109,7 +109,7 @@
     position: absolute;
     right: 0px;
     bottom: -536px;
-    width: 617px;
+    width: 500px;
     max-width: none;
     pointer-events: none;
     user-select: none;

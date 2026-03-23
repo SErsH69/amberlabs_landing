@@ -1,6 +1,6 @@
 .insight-scenarios {
     position: relative;
-    padding: 142px 0 33px;
+    padding: 100px 0 24px;
     background: #000;
 }
 
@@ -17,7 +17,7 @@
 .insight-scenarios__heading {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
     line-height: 1.2;
 }
@@ -25,14 +25,14 @@
 .insight-scenarios__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 95px;
-    row-gap: 9px;
-    margin-top: 39px;
+    column-gap: 56px;
+    row-gap: 6px;
+    margin-top: 28px;
 }
 
 .insight-scenarios__item {
     position: relative;
-    padding: 0 0 18px 26px;
+    padding: 0 0 14px 26px;
 }
 
 .insight-scenarios__item::before {
@@ -61,15 +61,15 @@
     color: #fff;
     font-family: var(--second-family);
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.25;
 }
 
 .insight-scenarios__item-text {
-    margin-top: 10px;
+    margin-top: 8px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
@@ -77,8 +77,8 @@
 .insight-scenarios__insight {
     position: relative;
     z-index: 1;
-    margin: 222px auto 0;
-    padding: 35px 34px 28px;
+    margin: 140px auto 0;
+    padding: 28px 30px 24px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     backdrop-filter: blur(24px);
@@ -88,7 +88,7 @@
 .insight-scenarios__insight-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 34px;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -98,9 +98,9 @@
 
 .insight-scenarios__insight-text {
     max-width: 1082px;
-    margin-top: 33px;
+    margin-top: 20px;
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     line-height: 1.45;
@@ -110,7 +110,7 @@
     position: absolute;
     left: 0;
     top: 208px;
-    width: 498px;
+    width: 400px;
     max-width: none;
     pointer-events: none;
     user-select: none;

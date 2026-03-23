@@ -5,6 +5,6 @@
 }
 
 @function vw($target) {
-    $vw-result: math.div($target * 100, 1920) * 1vw;
+    $vw-result: math.div($target * 100, 2100) * 1vw;
     @return $vw-result;
 }

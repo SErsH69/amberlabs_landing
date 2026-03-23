@@ -1,6 +1,6 @@
 .insight-value {
     position: relative;
-    padding: 22px 0 108px;
+    padding: 16px 0 90px;
 }
 
 .insight-value__inner {
@@ -8,7 +8,7 @@
 }
 
 .insight-value__hero {
-    padding: 31px 54px 25px;
+    padding: 24px 36px 20px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     backdrop-filter: blur(24px);
@@ -18,16 +18,16 @@
 .insight-value__hero-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
     color: #fff;
     line-height: 1.25;
 }
 
 .insight-value__hero-text {
     max-width: 960px;
-    margin-top: 14px;
+    margin-top: 10px;
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     line-height: 1.45;
@@ -36,8 +36,8 @@
 .insight-value__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 60px;
-    margin: 104px auto 0;
+    gap: 38px;
+    margin: 72px auto 0;
 }
 
 .insight-value__column-title {
@@ -45,11 +45,11 @@
     padding-bottom: 14px;
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.2;
-    margin-bottom: 27px;
+    margin-bottom: 18px;
 }
 
 .insight-value__column-title::after {
@@ -69,7 +69,7 @@
 }
 
 .insight-value__item + .insight-value__item {
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 .insight-value__item-icon {
@@ -84,7 +84,7 @@
     max-width: 376px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }

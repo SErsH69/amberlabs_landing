@@ -8,10 +8,10 @@
 }
 
 .analytics-data__title {
-    margin: 0 0 97px;
+    margin: 0 0 62px;
     color: #e39b18;
     font-family: var(--second-family);
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.15;
     text-align: center;
@@ -28,7 +28,7 @@
 .analytics-data__column {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 14px;
     position: relative;
     z-index: 2;
 }
@@ -79,7 +79,7 @@
     margin: 0 0 4px;
     color: #fff;
     font-family: var(--second-family);
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.35;
 }
@@ -87,7 +87,7 @@
 .analytics-data__item-text {
     color: rgba(255, 255, 255, 0.7);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.35;
 }
@@ -107,7 +107,7 @@
     top: 38%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    width: 420px;
+    width: 340px;
     max-width: 100%;
     pointer-events: none;
 }

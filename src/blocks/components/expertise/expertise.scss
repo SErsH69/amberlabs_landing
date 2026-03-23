@@ -35,7 +35,7 @@
 }
 
 .expertise__head {
-    margin: 0 auto 80px;
+    margin: 0 auto 56px;
     text-align: center;
 }
 
@@ -43,19 +43,19 @@
     margin: 0;
     color: #fff;
     font-family: var(--second-family);
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 400;
     line-height: 1.12;
 }
 
 .expertise__text {
     max-width: 620px;
-    margin: 31px auto 0;
+    margin: 22px auto 0;
     color: rgba(255, 255, 255, 0.46);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.4;
 }
 
 .expertise__grid {
@@ -67,7 +67,7 @@
 .expertise__card {
     position: relative;
     min-height: 174px;
-    padding: 26px 22px 58px;
+    padding: 20px 18px 28px;
     border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: 37px;
     background:
@@ -96,7 +96,7 @@
     margin-top: -27px;
     width: 52px;
     height: 52px;
-    margin-bottom: 67px;
+    margin-bottom: 38px;
     position: relative;
     padding-top: 11px;
     &:before {
@@ -128,9 +128,9 @@
 .expertise__card-text {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.38;
 }
 
 @media all and (max-width: 1023px) {

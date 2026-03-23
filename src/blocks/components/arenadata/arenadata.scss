@@ -1,6 +1,6 @@
 .arenadata {
     position: relative;
-    padding: 86px 0 102px;
+    padding: 80px 0 90px;
 }
 
 .arenadata__inner {
@@ -12,7 +12,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 34px;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -22,12 +22,12 @@
 
 .arenadata__intro {
     max-width: 1000px;
-    margin-top: 65px;
+    margin-top: 44px;
 }
 
 .arenadata__intro-text {
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     line-height: 1.44;
@@ -38,10 +38,10 @@
 }
 
 .arenadata__label {
-    margin-top: 79px;
+    margin-top: 56px;
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     line-height: 1.2;
 }
@@ -49,25 +49,25 @@
 .arenadata__grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 70px;
+    gap: 48px;
     max-width: 1223px;
-    margin-top: 40px;
+    margin-top: 28px;
 }
 
 .arenadata__item {
     display: flex;
     align-items: flex-start;
-    gap: 25px;
+    gap: 18px;
 }
 
 .arenadata__item + .arenadata__item {
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 .arenadata__item-mark {
     flex: 0 0 7px;
     width: 7px;
-    min-height: 56px;
+    min-height: 46px;
     height: stretch;
     border-radius: 999px;
     background: linear-gradient(180deg, #f3bc12 0%, #f19023 46%, #ee6d00 100%);
@@ -76,16 +76,16 @@
 .arenadata__item-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.26;
 }
 
 .arenadata__item-text {
-    margin-top: 8px;
+    margin-top: 6px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
