@@ -1,6 +1,6 @@
 .avanpost-scenarios {
     position: relative;
-    padding: 125px 0 94px;
+    padding: 30px 0 94px;
     overflow: hidden;
 }
 
@@ -90,7 +90,6 @@
 .avanpost-scenarios__insight {
     position: relative;
     z-index: 1;
-    margin: 408px 0 0;
     padding: 38px 55px 38px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 24px;
@@ -110,7 +109,6 @@
 }
 
 .avanpost-scenarios__insight-text {
-    max-width: 1026px;
     margin-top: 14px;
     font-family: var(--second-family);
     font-size: 24px;
@@ -125,7 +123,7 @@
         height: 7px;
     }
     .avanpost-scenarios {
-        padding: 48px 0 72px;
+        padding: 20px 0 72px;
     }
 
     .avanpost-scenarios__heading {
