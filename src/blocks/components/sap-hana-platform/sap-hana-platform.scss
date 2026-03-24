@@ -1,6 +1,6 @@
-.sap-hana-platform {
+﻿.sap-hana-platform {
     position: relative;
-    padding: 100px 0 0;
+    padding: vwc(100) 0 0;
     @media all and (max-width: 1023px) {
         overflow: hidden;
     }
@@ -16,11 +16,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 176px;
+    min-height: vwc(176);
 }
 
 .sap-hana-platform__content {
-    max-width: 1005px;
+    max-width: vwc(1005);
 }
 
 .sap-hana-platform__title {
@@ -28,27 +28,27 @@
     color: #e6991b;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 34px;
+    font-size: vwc(34);
     line-height: 1.2;
 }
 
 .sap-hana-platform__text {
-    max-width: 1005px;
-    margin-top: 12px;
+    max-width: vwc(1005);
+    margin-top: vwc(12);
     color: #fff;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: vwc(24);
     line-height: 1.34;
 }
 
 .sap-hana-platform__ellipse {
     position: absolute;
-    right: -118px;
-    top: 77px;
-    width: 380px;
+    right: vwc(-118);
+    top: vwc(77);
+    width: vwc(380);
     max-width: none;
-    margin: 18px 98px 0 0;
+    margin: vwc(18) vwc(98) 0 0;
     pointer-events: none;
     user-select: none;
 }
@@ -56,21 +56,21 @@
 .sap-hana-platform__label {
     position: relative;
     z-index: 1;
-    margin-top: 36px;
+    margin-top: vwc(36);
     color: #fff;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 26px;
+    font-size: vwc(26);
     line-height: 1.2;
 }
 
 .sap-hana-platform__panel {
     position: relative;
     z-index: 2;
-    margin-top: 28px;
+    margin-top: vwc(28);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 40px;
-    padding: 56px 24px 48px;
+    border-radius: vwc(40);
+    padding: vwc(56) vwc(24) vwc(48);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
 }
@@ -78,21 +78,21 @@
 .sap-hana-platform__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 18px;
-    row-gap: 17px;
+    column-gap: vwc(18);
+    row-gap: vwc(17);
 }
 
 .sap-hana-platform__item {
     display: flex;
-    gap: 18px;
-    min-height: 88px;
+    gap: vwc(18);
+    min-height: vwc(88);
     padding: 6px 8px 8px 0;
 }
 
 .sap-hana-platform__item-mark {
-    flex: 0 0 14px;
-    width: 14px;
-    height: 14px;
+    flex: 0 0 vwc(14);
+    width: vwc(14);
+    height: vwc(14);
     margin-top: 7px;
     margin-left: -2px;
     border-radius: 50%;
@@ -109,7 +109,7 @@
     color: #fff;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: vwc(22);
     line-height: 1.3;
 }
 
@@ -117,15 +117,15 @@
     color: rgba(255, 255, 255, 0.7);
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: vwc(18);
     line-height: 1.38;
 }
 
 .sap-hana-platform__sun {
     position: absolute;
-    top: -119px;
-    left: -174px;
-    width: 360px;
+    top: vwc(-119);
+    left: vwc(-174);
+    width: vwc(360);
     max-width: none;
     pointer-events: none;
     user-select: none;
@@ -201,3 +201,5 @@
         opacity: 0.9;
     }
 }
+
+

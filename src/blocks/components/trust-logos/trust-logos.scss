@@ -1,8 +1,8 @@
 .trust-logos {
     position: relative;
     overflow: hidden;
-    padding: 272px 0 140px;
-    background: url(../img/sun.svg) 0% 0% / 100% no-repeat;
+    padding: fluid(272, 180, 272) 0 fluid(140, 96, 140);
+    background: url(../img/sun.png) 0% 0% / 100% no-repeat;
 }
 
 .trust-logos__inner {
@@ -18,7 +18,7 @@
 .trust-logos__title {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 48px;
+    font-size: fluid(48, 30, 48);
     font-weight: 600;
     line-height: 1.18;
 }
@@ -26,7 +26,7 @@
 .trust-logos__subtitle {
     margin-top: 4px;
     font-family: var(--second-family);
-    font-size: 48px;
+    font-size: fluid(48, 30, 48);
     font-weight: 600;
     line-height: 1.18;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
@@ -38,8 +38,8 @@
 .trust-logos__panel {
     position: relative;
     z-index: 1;
-    max-width: 1248px;
-    margin: 55px auto 0;
+    max-width: fluid(1248, null, 1248);
+    margin: fluid(55, 28, 55) auto 0;
 }
 
 .trust-logos__image {

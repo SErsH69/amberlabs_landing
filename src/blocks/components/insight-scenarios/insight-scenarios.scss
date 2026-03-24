@@ -1,6 +1,6 @@
-.insight-scenarios {
+﻿.insight-scenarios {
     position: relative;
-    padding: 30px 0 24px;
+    padding: vwc(30) 0 vwc(24);
     background: #000;
 }
 
@@ -17,7 +17,7 @@
 .insight-scenarios__heading {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: vwc(22);
     color: #fff;
     line-height: 1.2;
 }
@@ -25,23 +25,23 @@
 .insight-scenarios__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 56px;
+    column-gap: vwc(56);
     row-gap: 6px;
-    margin-top: 28px;
+    margin-top: vwc(28);
 }
 
 .insight-scenarios__item {
     position: relative;
-    padding: 0 0 14px 26px;
+    padding: 0 0 vwc(14) vwc(26);
 }
 
 .insight-scenarios__item::before {
     content: '';
     position: absolute;
     top: 8px;
-    left: -7px;
-    width: 14px;
-    height: 14px;
+    left: vwc(-7);
+    width: vwc(14);
+    height: vwc(14);
     border-radius: 50%;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
 }
@@ -49,7 +49,7 @@
 .insight-scenarios__item::after {
     content: '';
     position: absolute;
-    left: 16px;
+    left: vwc(16);
     right: 0;
     bottom: 0;
     height: 1px;
@@ -61,7 +61,7 @@
     color: #fff;
     font-family: var(--second-family);
     font-weight: 500;
-    font-size: 22px;
+    font-size: vwc(22);
     line-height: 1.25;
 }
 
@@ -69,7 +69,7 @@
     margin-top: 8px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
@@ -78,9 +78,9 @@
     position: relative;
     z-index: 1;
     margin: 0 auto 0;
-    padding: 28px 30px 24px;
+    padding: vwc(28) vwc(30) vwc(24);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
+    border-radius: vwc(30);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
 }
@@ -88,7 +88,7 @@
 .insight-scenarios__insight-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 34px;
+    font-size: vwc(34);
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -97,10 +97,10 @@
 }
 
 .insight-scenarios__insight-text {
-    max-width: 1082px;
-    margin-top: 20px;
+    max-width: vwc(1082);
+    margin-top: vwc(20);
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     line-height: 1.45;
@@ -109,8 +109,8 @@
 .insight-scenarios__cristall {
     position: absolute;
     left: 0;
-    top: 208px;
-    width: 400px;
+    top: vwc(208);
+    width: vwc(400);
     max-width: none;
     pointer-events: none;
     user-select: none;
@@ -188,3 +188,5 @@
         opacity: 0.82;
     }
 }
+
+

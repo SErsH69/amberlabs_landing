@@ -1,7 +1,7 @@
-.consulting-strategy {
+﻿.consulting-strategy {
     position: relative;
-    padding: 100px 0;
-    padding-bottom: 340px;
+    padding: fluid(100, 72, 100) 0;
+    padding-bottom: fluid(340, 220, 340);
     overflow: hidden;
 }
 
@@ -11,20 +11,20 @@
 
 .consulting-strategy__head {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 560px;
-    gap: 48px;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, fluid(560, 420, 560));
+    gap: fluid(48, 28, 48);
     align-items: start;
-    margin-bottom: 72px;
+    margin-bottom: fluid(72, 40, 72);
 }
 
 .consulting-strategy__title {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: fluid(18, 12, 18);
     margin: 0;
     color: #e39b18;
     font-family: var(--second-family);
-    font-size: 40px;
+    font-size: fluid(40, 28, 40);
     font-weight: 600;
     line-height: 1.18;
 }
@@ -34,11 +34,11 @@
 }
 
 .consulting-strategy__text {
-    max-width: 560px;
+    max-width: fluid(560, 420, 560);
     width: 100%;
     color: rgba(255, 255, 255, 0.72);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: fluid(24, 16, 24);
     font-weight: 400;
     line-height: 1.45;
 }
@@ -46,39 +46,39 @@
 .consulting-strategy__panel {
     position: relative;
     z-index: 2;
-    padding: 48px 45px 48px;
+    padding: fluid(48, 28, 48) fluid(45, 24, 45) fluid(48, 28, 48);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 40px;
+    border-radius: fluid(40, 28, 40);
     backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.16);
 }
 
 .consulting-strategy__list {
     display: grid;
-    grid-template-columns: 490px minmax(0, 1fr);
+    grid-template-columns: minmax(0, fluid(490, 360, 490)) minmax(0, 1fr);
     margin: 0;
     padding: 0;
     list-style: none;
-    column-gap: 34px;
-    row-gap: 13px;
+    column-gap: fluid(34, 18, 34);
+    row-gap: fluid(13, 10, 13);
 }
 
 .consulting-strategy__item {
     display: flex;
     gap: 8px;
-    min-height: 52px;
-    padding: 9px 18px 9px 0;
-    max-width: 605px;
+    min-height: fluid(52, 40, 52);
+    padding: 9px fluid(18, 12, 18) 9px 0;
+    max-width: fluid(605, 420, 605);
     height: max-content;
     width: 100%;
 }
 
 .consulting-strategy__item:nth-child(odd) {
-    padding-right: 22px;
+    padding-right: fluid(22, 14, 22);
 }
 
 .consulting-strategy__item:nth-child(even) {
-    padding-left: 18px;
+    padding-left: fluid(18, 12, 18);
 }
 
 .consulting-strategy__item-mark {
@@ -94,16 +94,16 @@
 .consulting-strategy__item-text {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: fluid(24, 16, 24);
     font-weight: 400;
     line-height: 1.4;
 }
 
 .consulting-strategy__decor {
     position: absolute;
-    right: -160px;
-    bottom: -408px;
-    width: 635px;
+    right: fluid(-160, -160, -72);
+    bottom: fluid(-408, -408, -220);
+    width: fluid(635, 420, 635);
     pointer-events: none;
     user-select: none;
     z-index: 1;
@@ -208,3 +208,4 @@
         opacity: 0.94;
     }
 }
+

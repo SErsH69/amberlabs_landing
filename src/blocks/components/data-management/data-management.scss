@@ -1,6 +1,6 @@
-.data-management {
+﻿.data-management {
     position: relative;
-    padding: 68px 0 126px;
+    padding: vwc(68) 0 vwc(126);
 }
 
 .data-management__inner {
@@ -15,7 +15,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: vwc(40);
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,10 +24,10 @@
 }
 
 .data-management__subtitle {
-    margin-top: 60px;
+    margin-top: vwc(60);
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 26px;
+    font-size: vwc(26);
     color: #fff;
     line-height: 1.2;
 }
@@ -35,24 +35,24 @@
 .data-management__grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr) 1px minmax(0, 1fr);
-    column-gap: 40px;
-    margin: 60px auto 0;
+    column-gap: vwc(40);
+    margin: vwc(60) auto 0;
 }
 
 .data-management__divider {
     align-self: center;
     width: 1px;
     height: 100%;
-    margin-top: 22px;
+    margin-top: vwc(22);
     object-fit: cover;
     opacity: 0.82;
 }
 
 .data-management__column-title {
-    margin-bottom: 40px;
+    margin-bottom: vwc(40);
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: vwc(24);
     text-align: center;
     color: #fff;
     line-height: 1.2;
@@ -61,24 +61,24 @@
 .data-management__item {
     display: flex;
     align-items: flex-start;
-    gap: 23px;
+    gap: vwc(23);
 }
 
 .data-management__item + .data-management__item {
-    margin-top: 48px;
+    margin-top: vwc(48);
 }
 
 .data-management__item-icon {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
+    flex: 0 0 vwc(42);
+    width: vwc(42);
+    height: vwc(42);
     margin-top: 1px;
 }
 
 .data-management__item-text {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: vwc(24);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.32;
 }
@@ -145,3 +145,5 @@
         align-items: center;
     }
 }
+
+

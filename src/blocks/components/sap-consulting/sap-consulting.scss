@@ -1,7 +1,7 @@
-.sap-consulting {
+﻿.sap-consulting {
     position: relative;
     overflow: hidden;
-    padding: 100px 0;
+    padding: fluid(100, 72, 100) 0;
     background: #000;
 }
 
@@ -10,19 +10,19 @@
 }
 
 .sap-consulting__head {
-    margin-bottom: 60px;
+    margin-bottom: fluid(60, 32, 60);
 }
 
 .sap-consulting__title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
+    gap: fluid(14, 10, 14);
     margin: 0;
     color: #e39b18;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 32px;
+    font-size: fluid(32, 24, 32);
     line-height: 1.18;
 }
 
@@ -35,23 +35,23 @@
     z-index: 2;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 24px;
-    max-width: 1350px;
+    gap: fluid(24, 18, 24);
+    max-width: fluid(1350, null, 1350);
     margin: 0 auto;
 }
 
 .sap-consulting__panel {
-    padding: 20px 28px 14px;
+    padding: fluid(20, 16, 20) fluid(28, 20, 28) fluid(14, 12, 14);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 40px;
+    border-radius: fluid(40, 28, 40);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
 }
 
 .sap-consulting__item {
     display: flex;
-    gap: 20px;
-    min-height: 58px;
+    gap: fluid(20, 14, 20);
+    min-height: fluid(58, 46, 58);
     padding: 10px 0;
 }
 
@@ -75,7 +75,7 @@
 .sap-consulting__item-title {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 22px;
+    font-size: fluid(22, 16, 22);
     font-weight: 600;
     line-height: 1.25;
 }
@@ -83,17 +83,17 @@
 .sap-consulting__item-text {
     color: rgba(255, 255, 255, 0.58);
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: fluid(20, 14, 20);
     font-weight: 400;
     line-height: 1.45;
 }
 
 .sap-consulting__cube {
     position: absolute;
-    left: -212px;
-    bottom: -119px;
+    left: vwc(-212);
+    bottom: vwc(-119);
     z-index: 1;
-    width: 430px;
+    width: vwc(430);
     pointer-events: none;
     user-select: none;
 }
@@ -166,3 +166,5 @@
         display: none;
     }
 }
+
+

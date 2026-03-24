@@ -1,6 +1,6 @@
-.business-benefits {
+﻿.business-benefits {
     position: relative;
-    padding: 162px 0 138px;
+    padding: fluid(162, 100, 162) 0 fluid(138, 92, 138);
 }
 
 .business-benefits__inner {
@@ -11,7 +11,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: fluid(40, 28, 40);
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,16 +24,16 @@
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 43px;
-    margin-top: 62px;
+    gap: fluid(43, 24, 43);
+    margin-top: fluid(62, 32, 62);
 }
 
 .business-benefits__card {
     position: relative;
-    min-height: 290px;
-    padding: 31px 22px 20px;
+    min-height: fluid(290, 220, 290);
+    padding: fluid(31, 22, 31) fluid(22, 18, 22) fluid(20, 16, 20);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
+    border-radius: fluid(30, 22, 30);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
     grid-column: span 4;
@@ -45,24 +45,24 @@
 
 .business-benefits__card-icon {
     position: absolute;
-    top: 15px;
-    right: 18px;
-    width: 42px;
-    height: 42px;
+    top: fluid(15, 12, 15);
+    right: fluid(18, 14, 18);
+    width: fluid(42, 28, 42);
+    height: fluid(42, 28, 42);
 }
 
 .business-benefits__card-title {
     color: #fff;
     font-family: var(--second-family);
     font-weight: 500;
-    font-size: 26px;
+    font-size: fluid(26, 18, 26);
     line-height: 1.25;
 }
 
 .business-benefits__card-text {
-    margin-top: 29px;
+    margin-top: fluid(29, 16, 29);
     font-weight: 400;
-    font-size: 24px;
+    font-size: fluid(24, 16, 24);
     color: rgba(255, 255, 255, 0.7);
     font-family: var(--second-family);
     line-height: 1.42;
@@ -119,3 +119,4 @@
         opacity: 0.68;
     }
 }
+

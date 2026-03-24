@@ -1,9 +1,9 @@
-.app-development {
-    padding: 100px 0;
+﻿.app-development {
+    padding: fluid(100, 72, 100) 0;
     position: relative;
     overflow: hidden;
     background: url(../img/ellips.webp) 0% 0% / 100% no-repeat;
-    padding-bottom: 180px;
+    padding-bottom: fluid(180, 120, 180);
     * {
         box-sizing: border-box;
     }
@@ -18,10 +18,10 @@
 }
 
 .app-development__title {
-    margin: 0 0 vw(72);
+    margin: 0 0 fluid(72, 40, 72);
     color: #e39b18;
     font-family: var(--second-family);
-    font-size: 32px;
+    font-size: fluid(32, 24, 32);
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
@@ -29,21 +29,21 @@
 
 .app-development__title span {
     display: none;
-    height: 24px;
+    height: fluid(24, 18, 24);
 }
 
 .app-development__layout {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px minmax(0, 1fr);
-    column-gap: 30px;
-    min-height: vw(430);
+    grid-template-columns: minmax(0, 1fr) minmax(220px, fluid(320, 260, 320)) minmax(0, 1fr);
+    column-gap: fluid(30, 18, 30);
+    min-height: fluid(430, 320, 430);
 }
 
 .app-development__column {
     display: flex;
     flex-direction: column;
-    gap: vw(28);
+    gap: fluid(28, 16, 28);
 }
 
 .app-development__column_left {
@@ -54,15 +54,15 @@
         }
         .app-development__item {
             margin-left: auto;
-            padding-right: vw(93);
+            padding-right: fluid(93, 48, 93);
             &:nth-child(2) {
-                padding-right: vw(185);
+                padding-right: fluid(185, 92, 185);
             }
             &:nth-child(3), &:nth-child(4) {
-                padding-right: vw(244);
+                padding-right: fluid(244, 124, 244);
             }
             &:nth-child(5) {
-                padding-right: vw(277);
+                padding-right: fluid(277, 138, 277);
             }
         }
     }
@@ -72,20 +72,20 @@
     grid-column: 3;
     .app-development__item {
         @media all and (min-width: 1023px) {
-            padding-left: vw(143);
+            padding-left: fluid(143, 72, 143);
             &:nth-child(2) {
-                padding-left: vw(235);
+                padding-left: fluid(235, 118, 235);
             }
             &:nth-child(3) {
-                padding-left: vw(283);
-                padding-top: vw(17);
-                padding-bottom: vw(32);
+                padding-left: fluid(283, 142, 283);
+                padding-top: fluid(17, 12, 17);
+                padding-bottom: fluid(32, 18, 32);
             }
             &:nth-child(4) {
-                padding-left: vw(287);
+                padding-left: fluid(287, 144, 287);
             }
             &:nth-child(5) {
-                padding-left: vw(314);
+                padding-left: fluid(314, 156, 314);
             }
         }
     }
@@ -93,16 +93,16 @@
 
 .app-development__item {
     position: relative;
-    padding-top: vw(10);
+    padding-top: 10px;
 }
 
 @media all and (min-width: 1023px) {
     .app-development__item:after {
         content: "";
         position: absolute;
-        left: vw(-130);
-        right: vw(-170);
-        bottom: vw(-32);
+        left: fluid(-130, -130, -72);
+        right: fluid(-170, -170, -92);
+        bottom: fluid(-32, -32, -18);
         height: 1px;
         background: url("data:image/svg+xml,%3Csvg width='640' height='1' viewBox='0 0 640 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='4.37114e-08' y1='0.5' x2='640' y2='0.500056' stroke='url(%23paint0_linear_331_11105)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_331_11105' x1='-4.37114e-08' y1='1.5' x2='640' y2='1.50006' gradientUnits='userSpaceOnUse'%3E%3Cstop/%3E%3Cstop offset='0.514423' stop-color='white'/%3E%3Cstop offset='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A") 50% no-repeat;
     }
@@ -111,17 +111,17 @@
 .app-development__item-title {
     color: #fff;
     font-family: var(--second-family);
-    font-size: vw(20);
+    font-size: fluid(20, 14, 20);
     font-weight: 400;
     line-height: 1.3;
 }
 
 .app-development__globe {
     position: absolute;
-    left: calc(50% + vw(24));
-    top: vw(413);
+    left: calc(50% + #{fluid(24, 16, 24)});
+    top: fluid(413, 308, 413);
     z-index: 1;
-    width: vw(720);
+    width: fluid(720, 520, 720);
     max-width: none;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -191,3 +191,4 @@
         line-height: 1.35;
     }
 }
+

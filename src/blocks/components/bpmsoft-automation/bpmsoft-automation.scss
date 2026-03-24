@@ -1,6 +1,6 @@
-.bpmsoft-automation {
+﻿.bpmsoft-automation {
     position: relative;
-    padding: 100px 0 120px;
+    padding: vwc(100) 0 vwc(120);
 }
 
 .bpmsoft-automation__inner {
@@ -9,8 +9,8 @@
 
 .bpmsoft-automation__top {
     display: grid;
-    grid-template-columns: minmax(0, 744px) minmax(0, 560px);
-    column-gap: 50px;
+    grid-template-columns: minmax(0, vwc(744)) minmax(0, vwc(560));
+    column-gap: vwc(50);
     align-items: start;
     margin: 0 auto;
 }
@@ -19,7 +19,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 34px;
+    font-size: vwc(34);
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -28,10 +28,10 @@
 }
 
 .bpmsoft-automation__label {
-    margin-top: 72px;
+    margin-top: vwc(72);
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: vwc(22);
     color: #fff;
     line-height: 1.2;
 }
@@ -39,7 +39,7 @@
 .bpmsoft-automation__intro {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.48;
 }
@@ -47,26 +47,26 @@
 .bpmsoft-automation__content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    margin: 22px auto 0;
+    gap: vwc(12);
+    margin: vwc(22) auto 0;
 }
 
 .bpmsoft-automation__panel {
-    padding: 12px 18px 10px;
+    padding: vwc(12) vwc(18) 10px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
+    border-radius: vwc(40);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: vwc(28);
 }
 
 .bpmsoft-automation__item {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    padding: 10px 8px 11px 0;
+    gap: vwc(18);
+    padding: 10px 8px vwc(11) 0;
 }
 
 .bpmsoft-automation__item + .bpmsoft-automation__item {
@@ -78,20 +78,20 @@
     
     height: -webkit-fill-available;
     width: 7px;
-    min-height: 48px;
+    min-height: vwc(48);
     margin-top: 2px;
-    border-radius: 999px;
+    border-radius: vwc(999);
     background: linear-gradient(180deg, #f3bc12 0%, #f19023 46%, #ee6d00 100%);
 }
 
 .bpmsoft-automation__item-body {
-    max-width: 586px;
+    max-width: vwc(586);
 }
 
 .bpmsoft-automation__item-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: vwc(22);
     color: #fff;
     line-height: 1.25;
 }
@@ -100,16 +100,16 @@
     margin-top: 8px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
 
 .bpmsoft-automation__plate {
     position: absolute;
-    right: 0px;
-    bottom: -536px;
-    width: 500px;
+    right: 0;
+    bottom: vwc(-536);
+    width: vwc(500);
     max-width: none;
     pointer-events: none;
     user-select: none;
@@ -192,3 +192,5 @@
         opacity: 0.72;
     }
 }
+
+

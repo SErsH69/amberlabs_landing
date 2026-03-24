@@ -1,7 +1,7 @@
-.expertise {
+﻿.expertise {
     position: relative;
     overflow: hidden;
-    padding: 100px 0 100px;
+    padding: vwc(100) 0 vwc(100);
 }
 
 .expertise__decor {
@@ -13,8 +13,8 @@
 
 .expertise__decor_left {
     left: 0;
-    top: -39px;
-    width: 444px;
+    top: vwc(-39);
+    width: vwc(444);
     @media all and (max-width: 1023px) {
         display: none;
     }
@@ -22,8 +22,8 @@
 
 .expertise__decor_right {
     right: 0;
-    top: 458px;
-    width: 365px;
+    top: vwc(458);
+    width: vwc(365);
     @media all and (max-width: 1023px) {
         display: none;
     }
@@ -35,7 +35,7 @@
 }
 
 .expertise__head {
-    margin: 0 auto 56px;
+    margin: 0 auto vwc(56);
     text-align: center;
 }
 
@@ -43,17 +43,17 @@
     margin: 0;
     color: #fff;
     font-family: var(--second-family);
-    font-size: 48px;
+    font-size: vwc(48);
     font-weight: 400;
     line-height: 1.12;
 }
 
 .expertise__text {
-    max-width: 620px;
-    margin: 22px auto 0;
+    max-width: vwc(620);
+    margin: vwc(22) auto 0;
     color: rgba(255, 255, 255, 0.46);
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: vwc(20);
     font-weight: 400;
     line-height: 1.4;
 }
@@ -61,15 +61,15 @@
 .expertise__grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 24px;
+    gap: vwc(24);
 }
 
 .expertise__card {
     position: relative;
-    min-height: 174px;
-    padding: 20px 18px 28px;
+    min-height: vwc(174);
+    padding: vwc(20) vwc(18) vwc(28);
     border: 1px solid rgba(255, 255, 255, 0.26);
-    border-radius: 37px;
+    border-radius: vwc(37);
     background:
         linear-gradient(180deg, rgba(45, 45, 45, 0.78) 0%, rgba(26, 26, 26, 0.86) 100%);
     backdrop-filter: blur(14px);
@@ -92,13 +92,13 @@
 }
 
 .expertise__card-icon {
-    margin-left: 20px;
-    margin-top: -27px;
-    width: 52px;
-    height: 52px;
-    margin-bottom: 38px;
+    margin-left: vwc(20);
+    margin-top: vwc(-27);
+    width: vwc(52);
+    height: vwc(52);
+    margin-bottom: vwc(38);
     position: relative;
-    padding-top: 11px;
+    padding-top: vwc(11);
     &:before {
         border-radius: 10px;
         content: '';
@@ -128,7 +128,7 @@
 .expertise__card-text {
     color: #fff;
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: vwc(20);
     font-weight: 400;
     line-height: 1.38;
 }
@@ -219,3 +219,5 @@
         line-height: 1.35;
     }
 }
+
+

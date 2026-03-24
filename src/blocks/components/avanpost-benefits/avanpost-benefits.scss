@@ -1,6 +1,6 @@
-.avanpost-benefits {
+﻿.avanpost-benefits {
     position: relative;
-    padding: 100px 0;
+    padding: vwc(100) 0;
     background: #000;
 }
 
@@ -12,7 +12,7 @@
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 40px;
+    font-size: vwc(40);
     line-height: 1.24;
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
@@ -25,16 +25,16 @@
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 66px;
+    gap: vwc(24);
+    margin-top: vwc(66);
 }
 
 .avanpost-benefits__card {
     position: relative;
-    min-height: 215px;
-    padding: 31px 22px 20px;
+    min-height: vwc(215);
+    padding: vwc(31) vwc(22) vwc(20);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
+    border-radius: vwc(30);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
     grid-column: span 4;
@@ -42,17 +42,17 @@
 
 .avanpost-benefits__card-icon {
     position: absolute;
-    top: 15px;
-    right: 18px;
-    width: 42px;
-    height: 42px;
+    top: vwc(15);
+    right: vwc(18);
+    width: vwc(42);
+    height: vwc(42);
 }
 
 .avanpost-benefits__card-text {
-    max-width: 362px;
+    max-width: vwc(362);
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: vwc(24);
     line-height: 1.42;
     color: #fff;
 }
@@ -94,3 +94,5 @@
         line-height: 1.4;
     }
 }
+
+

@@ -1,6 +1,6 @@
-.insight-value {
+﻿.insight-value {
     position: relative;
-    padding: 16px 0 90px;
+    padding: vwc(16) 0 vwc(90);
 }
 
 .insight-value__inner {
@@ -8,9 +8,9 @@
 }
 
 .insight-value__hero {
-    padding: 24px 36px 20px;
+    padding: vwc(24) vwc(36) vwc(20);
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
+    border-radius: vwc(30);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
 }
@@ -18,16 +18,16 @@
 .insight-value__hero-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 22px;
+    font-size: vwc(22);
     color: #fff;
     line-height: 1.25;
 }
 
 .insight-value__hero-text {
-    max-width: 960px;
+    max-width: vwc(960);
     margin-top: 10px;
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     line-height: 1.45;
@@ -36,20 +36,20 @@
 .insight-value__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 38px;
-    margin: 72px auto 0;
+    gap: vwc(38);
+    margin: vwc(72) auto 0;
 }
 
 .insight-value__column-title {
     position: relative;
-    padding-bottom: 14px;
+    padding-bottom: vwc(14);
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: vwc(20);
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.2;
-    margin-bottom: 18px;
+    margin-bottom: vwc(18);
 }
 
 .insight-value__column-title::after {
@@ -65,26 +65,26 @@
 .insight-value__item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: vwc(12);
 }
 
 .insight-value__item + .insight-value__item {
-    margin-top: 14px;
+    margin-top: vwc(14);
 }
 
 .insight-value__item-icon {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
+    flex: 0 0 vwc(42);
+    width: vwc(42);
+    height: vwc(42);
     margin-top: 2px;
-    margin-left: -12px;
+    margin-left: vwc(-12);
 }
 
 .insight-value__item-text {
-    max-width: 376px;
+    max-width: vwc(376);
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
@@ -137,3 +137,5 @@
         margin-left: 0;
     }
 }
+
+

@@ -1,10 +1,10 @@
-.hero {
+﻿.hero {
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    min-height: 860px;
-    padding: 112px 0 210px;
+    min-height: fluid(860, 720, 860);
+    padding: fluid(112, 84, 112) 0 fluid(210, 150, 210);
     background:
         radial-gradient(200% 140% at 0% 0%, rgba(175, 103, 39, 0.55) 0%, rgba(71, 37, 14, 0.32) 28%, rgba(0, 0, 0, 0) 70%),
         linear-gradient(180deg, #000 0%, #020202 100%);
@@ -27,13 +27,13 @@
 .hero__eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 49px;
-    margin-bottom: 26px;
+    gap: fluid(49, 24, 49);
+    margin-bottom: fluid(26, 16, 26);
 }
 
 .hero__eyebrow-line {
     display: block;
-    width: 108px;
+    width: fluid(108, 56, 108);
     height: 2px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(216, 144, 60, 0.95) 100%);
 }
@@ -46,7 +46,7 @@
     position: relative;
     color: #d9921b;
     font-family: var(--second-family);
-    font-size: 50px;
+    font-size: fluid(50, 26, 50);
     font-weight: 400;
     line-height: 1.1;
 }
@@ -63,29 +63,29 @@
 }
 
 .hero__eyebrow-text::before {
-    left: -48px;
+    left: fluid(-48, -48, -24);
 }
 
 .hero__eyebrow-text::after {
-    right: -48px;
+    right: fluid(-48, -48, -24);
 }
 
 .hero__title {
     margin: 0;
     color: #fff;
     font-family: var(--second-family);
-    font-size: 60px;
+    font-size: fluid(60, 42, 60);
     font-weight: 400;
     line-height: 1.08;
     letter-spacing: -0.02em;
 }
 
 .hero__text {
-    max-width: 620px;
-    margin-top: 22px;
+    max-width: fluid(620, 420, 620);
+    margin-top: fluid(22, 16, 22);
     color: rgba(255, 255, 255, 0.7);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: fluid(24, 16, 24);
     font-weight: 400;
     line-height: 1.45;
 }
@@ -93,7 +93,7 @@
 .hero__arc {
     position: absolute;
     left: 50%;
-    bottom: -28px;
+    bottom: vwc(-28);
     z-index: 1;
     width: 100%;
     transform: translateX(-50%);
@@ -155,3 +155,5 @@
         min-width: 820px;
     }
 }
+
+

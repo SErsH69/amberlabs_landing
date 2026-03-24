@@ -5,6 +5,38 @@
 }
 
 @function vw($target) {
-    $vw-result: math.div($target * 100, 2100) * 1vw;
+    $vw-result: math.div($target * 100, 1920) * 1vw;
     @return $vw-result;
+}
+
+@function fluid($target, $min: null, $max: null, $base: 1920) {
+    $fluid-value: math.div($target * 100, $base) * 1vw;
+
+    @if $min != null and $max != null {
+        @return clamp(#{$min}px, #{$fluid-value}, #{$max}px);
+    }
+
+    @if $min != null {
+        @return max(#{$min}px, #{$fluid-value});
+    }
+
+    @if $max != null {
+        @return min(#{$fluid-value}, #{$max}px);
+    }
+
+    @return $fluid-value;
+}
+
+@function vwc($target, $base: 1920) {
+    $fluid-value: math.div($target * 100, $base) * 1vw;
+
+    @if $target > 0 {
+        @return min(#{$fluid-value}, #{$target}px);
+    }
+
+    @if $target < 0 {
+        @return max(#{$fluid-value}, #{$target}px);
+    }
+
+    @return 0;
 }

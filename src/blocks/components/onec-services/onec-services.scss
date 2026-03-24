@@ -1,7 +1,7 @@
-.onec-services {
+﻿.onec-services {
     position: relative;
     overflow: hidden;
-    padding: 245px 0 196px;
+    padding: vwc(245) 0 vwc(196);
     background: #000;
 }
 
@@ -10,18 +10,18 @@
 }
 
 .onec-services__head {
-    margin-bottom: 64px;
+    margin-bottom: vwc(64);
 }
 
 .onec-services__title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 14px;
+    gap: vwc(14);
     margin: 0;
     color: #e39b18;
     font-family: var(--second-family);
-    font-size: 40px;
+    font-size: vwc(40);
     font-weight: 600;
     line-height: 1.18;
 }
@@ -34,8 +34,8 @@
     position: relative;
     z-index: 2;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 40px;
-    padding: 43px 30px 30px;
+    border-radius: vwc(40);
+    padding: vwc(43) vwc(30) vwc(30);
     backdrop-filter: blur(24px);
     background: rgba(255, 255, 255, 0.1);
 }
@@ -43,21 +43,21 @@
 .onec-services__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 18px;
-    row-gap: 17px;
+    column-gap: vwc(18);
+    row-gap: vwc(17);
 }
 
 .onec-services__item {
     display: flex;
-    gap: 18px;
-    min-height: 106px;
+    gap: vwc(18);
+    min-height: vwc(106);
     padding: 8px 10px 10px 0;
 }
 
 .onec-services__item-mark {
-    flex: 0 0 14px;
-    width: 14px;
-    height: 14px;
+    flex: 0 0 vwc(14);
+    width: vwc(14);
+    height: vwc(14);
     margin-top: 7px;
     border-radius: 50%;
     background: linear-gradient(180deg, #f4be00 0%, #ee6d00 100%);
@@ -74,24 +74,24 @@
     color: #fff;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 26px;
+    font-size: vwc(26);
     line-height: 1.3;
 }
 
 .onec-services__item-text {
     color: rgba(255, 255, 255, 0.58);
     font-family: var(--second-family);
-    font-size: 24px;
+    font-size: vwc(24);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.38;
 }
 
 .onec-services__puzzles {
     position: absolute;
-    right: -107px;
-    top: -207px;
+    right: vwc(-107);
+    top: vwc(-207);
     z-index: 1;
-    width: 633px;
+    width: vwc(633);
     pointer-events: none;
     user-select: none;
 }
@@ -99,9 +99,9 @@
 .onec-services__arc {
     position: absolute;
     left: 50%;
-    bottom: -30px;
+    bottom: vwc(-30);
     z-index: 1;
-    width: min(100%, 1918px);
+    width: 100%;
     transform: translateX(-50%);
     pointer-events: none;
     user-select: none;
@@ -162,3 +162,5 @@
         display: none;
     }
 }
+
+

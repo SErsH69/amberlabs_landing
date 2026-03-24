@@ -1,6 +1,6 @@
-.arenadata {
+﻿.arenadata {
     position: relative;
-    padding: 80px 0 90px;
+    padding: vwc(80) 0 vwc(90);
 }
 
 .arenadata__inner {
@@ -8,11 +8,11 @@
 }
 
 .arenadata__title {
-    max-width: 790px;
+    max-width: vwc(790);
     margin: 0;
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 34px;
+    font-size: vwc(34);
     background: linear-gradient(180deg, #f4be00 0%, #f19023 37.02%, #ee6d00 87.02%, #c35900 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -21,26 +21,26 @@
 }
 
 .arenadata__intro {
-    margin-top: 44px;
+    margin-top: vwc(44);
 }
 
 .arenadata__intro-text {
     font-family: var(--second-family);
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
     line-height: 1.44;
 }
 
 .arenadata__intro-text + .arenadata__intro-text {
-    margin-top: 18px;
+    margin-top: vwc(18);
 }
 
 .arenadata__label {
-    margin-top: 56px;
+    margin-top: vwc(56);
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: vwc(20);
     color: #fff;
     line-height: 1.2;
 }
@@ -48,34 +48,34 @@
 .arenadata__grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 48px;
-    max-width: 1223px;
-    margin-top: 28px;
+    gap: vwc(48);
+    max-width: vwc(1223);
+    margin-top: vwc(28);
 }
 
 .arenadata__item {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
+    gap: vwc(18);
 }
 
 .arenadata__item + .arenadata__item {
-    margin-top: 16px;
+    margin-top: vwc(16);
 }
 
 .arenadata__item-mark {
     flex: 0 0 7px;
     width: 7px;
-    min-height: 46px;
+    min-height: vwc(46);
     height: stretch;
-    border-radius: 999px;
+    border-radius: vwc(999);
     background: linear-gradient(180deg, #f3bc12 0%, #f19023 46%, #ee6d00 100%);
 }
 
 .arenadata__item-title {
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.26;
 }
@@ -84,7 +84,7 @@
     margin-top: 6px;
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: vwc(20);
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.42;
 }
@@ -147,3 +147,5 @@
         line-height: 1.4;
     }
 }
+
+
